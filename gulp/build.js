@@ -1,12 +1,16 @@
 'use strict';
 
+/*
+ * Kompletne Buidlvoanie
+ */
+
 var gulp = require('gulp');
 
 var $ = require('gulp-load-plugins')({
   pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
 });
 
-module.exports = function(options) {
+module.exports = function (options) {
   gulp.task('partials', function () {
     return gulp.src([
       options.src + '/{app,components}/**/*.html',
@@ -24,7 +28,7 @@ module.exports = function(options) {
   });
 
   gulp.task('html', ['inject', 'partials'], function () {
-    var partialsInjectFile = gulp.src(options.tmp + '/partials/templateCacheHtml.js', { read: false });
+    var partialsInjectFile = gulp.src(options.tmp + '/partials/templateCacheHtml.js', {read: false});
     var partialsInjectOptions = {
       starttag: '<!-- inject:partials -->',
       ignorePath: options.tmp + '/partials',
@@ -42,7 +46,7 @@ module.exports = function(options) {
       .pipe($.rev())
       .pipe(jsFilter)
       .pipe($.ngAnnotate())
-      .pipe($.uglify({ preserveComments: $.uglifySaveLicense })).on('error', options.errorHandler('Uglify'))
+      .pipe($.uglify({preserveComments: $.uglifySaveLicense})).on('error', options.errorHandler('Uglify'))
       .pipe(jsFilter.restore())
       .pipe(cssFilter)
       .pipe($.csso())
@@ -59,7 +63,7 @@ module.exports = function(options) {
       }))
       .pipe(htmlFilter.restore())
       .pipe(gulp.dest(options.dist + '/'))
-      .pipe($.size({ title: options.dist + '/', showFiles: true }));
+      .pipe($.size({title: options.dist + '/', showFiles: true}));
   });
 
   // Only applies for fonts from bower dependencies
