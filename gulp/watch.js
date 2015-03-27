@@ -32,23 +32,4 @@ module.exports = function (options) {
             browserSync.reload(event.path);
         });
     });
-
-    //gryfonn-gulp
-    /**
-     * Watch na gulp files a spustanie inject tasku
-     */
-    gulp.task('watch:gulp', ['clean'], function () {
-        gulp.watch(['gulp/*.js'], function (event) {
-            if (isOnlyChange(event)) {
-                return gulp.start('gulp-inject');
-            }
-        });
-    });
-    //gryfonn-gulp
-    /**
-     * zaobalenie injectovania pre dependency na clean
-     */
-    gulp.task('gulp-inject', ['clean'], function () {
-        return gulp.start('inject');
-    })
 };
