@@ -10,6 +10,7 @@
 <!--<![endif]-->
 
 <head>
+    <!--TODO jQuery musi byt prvy pred vsetkym skoro-->
     <!--TODO presuvat aj js javascripty do distu-->
     <!--TODO fonts su dva krat, raz v /dist/css foldery a potom druhe su v /fonts-->
     <!--TODO font-awesome ma cesty na svoje fonty zmenit to -->
@@ -32,7 +33,6 @@
 
 
     <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
     <!-- bower:css -->
     <!-- run `gulp inject` to automatically populate bower styles dependencies -->
     <!-- endbower -->
@@ -959,14 +959,14 @@ _________________________________________________________ -->
     ga('send', 'pageview');
 </script>
 
+<!-- maps -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
 <!-- build:js(src) scripts/vendor.js -->
 <!-- bower:js -->
 <!-- run `gulp inject` to automatically populate bower script dependencies -->
 <!-- endbower -->
 <!-- endbuild -->
-
-<!-- maps -->
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
 <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
 <!-- inject:js -->
