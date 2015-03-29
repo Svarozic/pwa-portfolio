@@ -27,7 +27,7 @@ $(window).resize(function () {
 
     newWindowWidth = $(window).width();
 
-    if (windowWidth !== newWindowWidth) {
+	if ((typeof windowWidth !== 'undefined') && windowWidth !== newWindowWidth) {
 	setTimeout(function () {
 	    $(this).alignElementsSameHeight();
 	    fullScreenContainer();
@@ -175,21 +175,31 @@ function parallax() {
  *  =======================================*/
 
 function masonry() {
+	function isFunction(functionToCheck) {
+		var getType = {};
+		return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
+	}
 
-    $('#references-masonry').css({visibility: 'visible'});
 
-    $('#references-masonry').masonry({
-	itemSelector: '.reference-item:not(.hidden)',
-	isFitWidth: true,
-	isResizable: true,
-	isAnimated: true,
-	animationOptions: {
-	    duration: 200,
-	    easing: 'linear',
-	    queue: true
-	},
-	gutter: 30
-    });
+	var DOMrefMasonry = $('#references-masonry');
+
+	DOMrefMasonry.css({visibility: 'visible'});
+
+	if (isFunction(DOMrefMasonry.masonry)) {
+
+		DOMrefMasonry.masonry({
+			itemSelector: '.reference-item:not(.hidden)',
+			isFitWidth: true,
+			isResizable: true,
+			isAnimated: true,
+			animationOptions: {
+				duration: 200,
+				easing: 'linear',
+				queue: true
+			},
+			gutter: 30
+		});
+	}
     scrollSpyRefresh();
     waypointsRefresh();
 }
