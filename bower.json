@@ -9,7 +9,6 @@
     "angular": "~1.3.4",
     "jquery": "1.11.2",
     "jquery-cookie": "~1.4.1",
-    "jquery-parallax": "~1.1.3",
     "jquery.scrollTo": "~2.1.0"
   },
   "overrides": {
@@ -21,8 +20,6 @@
     "angular-mocks": "~1.3.4"
   },
   "resolutions": {
-    "angular": "~1.3.4",
-    "jquery": "1.11.2",
-    "jquery.scrollTo": "~1.4.6"
+    "angular": "~1.3.4"
   }
 }

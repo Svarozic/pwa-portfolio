@@ -45,10 +45,7 @@ module.exports = function (options) {
         };
 
         var wiredepOptions = {
-            directory: 'bower_components',
-            onMainNotFound: function (pkg) {
-                $.util.log($.util.colors.red('onMainNotFound: ' + pkg));
-            }
+            directory: 'bower_components'
         };
 
         return gulp.src(options.src + '/*.html')
