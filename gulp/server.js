@@ -11,8 +11,9 @@ var middleware = require('./proxy');
 module.exports = function(options) {
 
   function browserSyncInit(baseDir, browser) {
-    browser = browser === undefined ? 'default' : browser;
-
+    //gryfonn-gulp
+    //browser = browser === undefined ? 'default' : browser;
+    browser = browser === undefined ? 'firefox' : browser;
     var routes = null;
     if(baseDir === options.src || (util.isArray(baseDir) && baseDir.indexOf(options.src) !== -1)) {
       routes = {
