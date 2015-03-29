@@ -54,14 +54,15 @@ module.exports = function (options) {
       .pipe(assets.restore())
       .pipe($.useref())
       .pipe($.revReplace())
-      .pipe(htmlFilter)
-      .pipe($.minifyHtml({
-        empty: true,
-        spare: true,
-        quotes: true,
-        conditionals: true
-      }))
-      .pipe(htmlFilter.restore())
+        //gryfonn vypnuta html minifikacia pre development
+      //.pipe(htmlFilter)
+      //.pipe($.minifyHtml({
+      //  empty: true,
+      //  spare: true,
+      //  quotes: true,
+      //  conditionals: true
+      //}))
+      //.pipe(htmlFilter.restore())
       .pipe(gulp.dest(options.dist + '/'))
       .pipe($.size({title: options.dist + '/', showFiles: true}));
   });
