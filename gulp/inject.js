@@ -10,7 +10,7 @@ module.exports = function (options) {
             options.src + '/{app,components}/**/*.css',
             //gryfonn-gulp pridane css z boostrap template
             options.src + '/css/**/*.css',
-            '!'+options.src + '/css/**/*.{blue,green,pink,red,violet}.css'
+            '!' + options.src + '/css/**/*.{blue,green,pink,red,violet}.css'
         ], {read: false});
 
 
@@ -45,10 +45,14 @@ module.exports = function (options) {
         };
 
         var wiredepOptions = {
-            directory: 'bower_components'
+            directory: 'bower_components',
+            onMainNotFound: function (pkg) {
+                $.util.log($.util.colors.red('onMainNotFound: ' + pkg));
+            }
         };
 
         return gulp.src(options.src + '/*.html')
+            .pipe($.plumber())
             .pipe($.inject(injectStyles, injectOptions))
             .pipe($.inject(injectScripts, injectOptions))
 
