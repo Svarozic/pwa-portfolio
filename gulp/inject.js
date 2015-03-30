@@ -8,25 +8,26 @@ module.exports = function (options) {
     gulp.task('inject', ['scripts'], function () {
         var injectStyles = gulp.src([
             options.src + '/{app,components}/**/*.css',
-            //gryfonn-gulp pridane css z boostrap template
+            //gryfonn-gulp pridane css z b-template
             options.src + '/css/**/*.css',
+            //gryfonn-gulp voli si default temu zatial
             '!' + options.src + '/css/**/*.{blue,green,pink,red,violet}.css'
         ], {read: false});
-
 
         var injectScripts = gulp.src([
             options.src + '/{app,components}/**/*.js',
             '!' + options.src + '/{app,components}/**/*.spec.js',
             '!' + options.src + '/{app,components}/**/*.mock.js',
 
-            //gryfonn-gulp external kniznice v priecinku js
-            options.src + '/js/**/*.js',
-            '!' + options.src + '/js/**/*.spec.js',
-            '!' + options.src + '/js/**/*.mock.js',
-            //gryfonn-gulp specialne kniznice kt musely do headere
-            '!' + options.src + '/js/respond.min.js'
+            //gryfonn-gulp external kniznice v priecinku js ktore neboli pre bower
+            options.src + '/js/front.js',
+            options.src + '/js/jquery.counterup.min.js',
+            options.src + '/js/jquery.parallax-1.1.3.js',
+            options.src + '/js/owl.carousel.min.js'
+
         ])
-            .pipe($.angularFilesort()).on('error', options.errorHandler('AngularFilesort'));
+            .pipe($.angularFilesort())
+            .on('error', options.errorHandler('AngularFilesort'));
 
 
         //gryfonn-gulp inject respond specialne
