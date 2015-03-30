@@ -11,7 +11,7 @@ module.exports = function (options) {
             //gryfonn-gulp pridane css z b-template
             options.src + '/css/**/*.css',
             //gryfonn-gulp voli si default temu zatial
-            '!' + options.src + '/css/**/*.{blue,green,pink,red,violet}.css'
+            '!' + options.src + '/css/**/*.{default,green,pink,red,violet}.css'
         ], {read: false});
 
         var injectScripts = gulp.src([
