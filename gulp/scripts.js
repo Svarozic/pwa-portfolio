@@ -12,7 +12,6 @@ module.exports = function (options) {
         return gulp.src(options.src + '/{app,components}/**/*.js')
             .pipe($.jshint())
             .pipe($.jshint.reporter('jshint-stylish'))
-            .pipe(browserSync.reload({stream: true}))
             .pipe($.size());
     });
 };
