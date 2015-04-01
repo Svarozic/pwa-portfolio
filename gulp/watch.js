@@ -12,12 +12,18 @@ function isOnlyChange(event) {
 module.exports = function (options) {
     gulp.task('watch', ['inject'], function () {
 
+        //HTML
         gulp.watch([options.src + '/*.html', 'bower.json'], function (event) {
             gulp.start('inject');
             reloadBrowser(event, true);
         });
 
-        gulp.watch(options.src + '/{app,components}/**/*.css', function (event) {
+        gulp.watch(options.src + '/{app,components}/**/*.html', function (event) {
+            reloadBrowser(event);
+        });
+
+        //CSS
+        gulp.watch([options.src + '/{app,components}/**/*.css', options.src + '/css/**/*.css'], function (event) {
             if (isOnlyChange(event)) {
                 reloadBrowser(event)
             } else {
@@ -26,7 +32,8 @@ module.exports = function (options) {
             }
         });
 
-        gulp.watch(options.src + '/{app,components}/**/*.js', function (event) {
+        //JS
+        gulp.watch([options.src + '/{app,components}/**/*.js', options.src + '/js/**/*.js'], function (event) {
             if (isOnlyChange(event)) {
                 gulp.start('scripts');
                 reloadBrowser(event);
@@ -35,16 +42,12 @@ module.exports = function (options) {
                 reloadBrowser(event, true);
             }
         });
-
-        gulp.watch(options.src + '/{app,components}/**/*.html', function (event) {
-            reloadBrowser(event);
-        });
     });
 };
 
 function reloadBrowser(event, isDelayed, millis) {
     //zavysi to od scripts + inject tasku casu kolko maju dokopy a podla toho zladit
-    var defaultMillis = 350;
+    var defaultMillis = 800;
 
     if (isDelayed) {
         setTimeout(function () {
