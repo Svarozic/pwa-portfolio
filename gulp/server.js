@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var argv = require('yargs').argv;
 var browserSync = require('browser-sync');
 var browserSyncSpa = require('browser-sync-spa');
 
@@ -11,9 +12,7 @@ var middleware = require('./proxy');
 module.exports = function(options) {
 
   function browserSyncInit(baseDir, browser) {
-    //gryfonn-gulp
-    //browser = browser === undefined ? 'default' : browser;
-    browser = browser === undefined ? 'chrome' : browser;
+    browser = browser === undefined ? 'default' : browser;
     var routes = null;
     if(baseDir === options.src || (util.isArray(baseDir) && baseDir.indexOf(options.src) !== -1)) {
       routes = {
@@ -42,7 +41,7 @@ module.exports = function(options) {
   }));
 
   gulp.task('serve', ['watch'], function () {
-    browserSyncInit([options.tmp + '/serve', options.src]);
+    browserSyncInit([options.tmp + '/serve', options.src], argv.browser);
   });
 
   gulp.task('serve:dist', ['build'], function () {
