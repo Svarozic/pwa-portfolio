@@ -1,7 +1,9 @@
 'use strict';
 
 var gulp = require('gulp');
+
 var $ = require('gulp-load-plugins')();
+
 var wiredep = require('wiredep').stream;
 
 module.exports = function (options) {
@@ -46,7 +48,6 @@ module.exports = function (options) {
         };
 
         return gulp.src(options.src + '/*.html')
-            .pipe($.plumber())
             .pipe($.inject(injectStyles, injectOptions))
             .pipe($.inject(injectScripts, injectOptions))
 

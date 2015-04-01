@@ -7,6 +7,8 @@ function isOnlyChange(event) {
     return event.type === 'changed';
 }
 
+//gryfonn-gulp CELE SKORO ZMENENE
+
 module.exports = function (options) {
     gulp.task('watch', ['inject'], function () {
 
@@ -43,7 +45,6 @@ module.exports = function (options) {
 function reloadBrowser(event, isDelayed, millis) {
     //zavysi to od scripts + inject tasku casu kolko maju dokopy a podla toho zladit
     var defaultMillis = 350;
-
 
     if (isDelayed) {
         setTimeout(function () {

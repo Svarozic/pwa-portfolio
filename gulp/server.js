@@ -13,6 +13,7 @@ module.exports = function(options) {
 
   function browserSyncInit(baseDir, browser) {
     browser = browser === undefined ? 'default' : browser;
+
     var routes = null;
     if(baseDir === options.src || (util.isArray(baseDir) && baseDir.indexOf(options.src) !== -1)) {
       routes = {
@@ -41,6 +42,7 @@ module.exports = function(options) {
   }));
 
   gulp.task('serve', ['watch'], function () {
+    //gryfonn-gulp --browser parameter mozny
     browserSyncInit([options.tmp + '/serve', options.src], argv.browser);
   });
 

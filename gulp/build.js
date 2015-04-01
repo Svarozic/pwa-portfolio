@@ -1,9 +1,5 @@
 'use strict';
 
-/*
- * Kompletne Buidlvoanie
- */
-
 var gulp = require('gulp');
 
 var $ = require('gulp-load-plugins')({
@@ -46,7 +42,7 @@ module.exports = function (options) {
       .pipe($.rev())
       .pipe(jsFilter)
       .pipe($.ngAnnotate())
-      //.pipe($.uglify({preserveComments: $.uglifySaveLicense})).on('error', options.errorHandler('Uglify'))
+        .pipe($.uglify({preserveComments: $.uglifySaveLicense})).on('error', options.errorHandler('Uglify'))
       .pipe(jsFilter.restore())
       .pipe(cssFilter)
       .pipe($.csso())
@@ -54,15 +50,14 @@ module.exports = function (options) {
       .pipe(assets.restore())
       .pipe($.useref())
       .pipe($.revReplace())
-        //gryfonn vypnuta html minifikacia pre development
-      //.pipe(htmlFilter)
-      //.pipe($.minifyHtml({
-      //  empty: true,
-      //  spare: true,
-      //  quotes: true,
-      //  conditionals: true
-      //}))
-      //.pipe(htmlFilter.restore())
+        .pipe(htmlFilter)
+        .pipe($.minifyHtml({
+          empty: true,
+          spare: true,
+          quotes: true,
+          conditionals: true
+        }))
+        .pipe(htmlFilter.restore())
       .pipe(gulp.dest(options.dist + '/'))
       .pipe($.size({title: options.dist + '/', showFiles: true}));
   });
