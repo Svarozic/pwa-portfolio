@@ -1,20 +1,16 @@
 'use strict';
 
-/*
- * Len skontroluje vsetky scripty v  /SRC/{app,components} JsHintom a refreshne browser ak je spusteny
- */
-
 var gulp = require('gulp');
-var browserSync = require('browser-sync');
-
 var $ = require('gulp-load-plugins')();
 
 module.exports = function (options) {
-  gulp.task('scripts', function () {
-    return gulp.src(options.src + '/{app,components}/**/*.js')
-      .pipe($.jshint())
-      .pipe($.jshint.reporter('jshint-stylish'))
-      .pipe(browserSync.reload({stream: true}))
-      .pipe($.size());
-  });
+    gulp.task('scripts', function () {
+        return gulp.src(options.src + '/{app,components}/**/*.js')
+            //gryfonn-gulp len zmenene subory beriem do uvahy na lint
+            .pipe($.changed(options.src + '/{app,components}/**/*.js'))
+            .pipe($.jshint())
+            .pipe($.jshint.reporter('jshint-stylish'))
+            //gryfonn-gulp sync reload siel prec lebo rucne davam v watch
+            .pipe($.size());
+    });
 };

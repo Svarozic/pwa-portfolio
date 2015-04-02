@@ -7,29 +7,54 @@ function isOnlyChange(event) {
     return event.type === 'changed';
 }
 
+//gryfonn-gulp CELE SKORO ZMENENE
+
 module.exports = function (options) {
     gulp.task('watch', ['inject'], function () {
 
-        gulp.watch([options.src + '/*.html', 'bower.json'], ['inject']);
-
-        gulp.watch(options.src + '/{app,components}/**/*.css', function (event) {
-            if (isOnlyChange(event)) {
-                browserSync.reload(event.path);
-            } else {
-                gulp.start('inject');
-            }
-        });
-
-        gulp.watch(options.src + '/{app,components}/**/*.js', function (event) {
-            if (isOnlyChange(event)) {
-                gulp.start('scripts');
-            } else {
-                gulp.start('inject');
-            }
+        //HTML
+        gulp.watch([options.src + '/*.html', 'bower.json'], function (event) {
+            gulp.start('inject');
+            reloadBrowser(event, true);
         });
 
         gulp.watch(options.src + '/{app,components}/**/*.html', function (event) {
-            browserSync.reload(event.path);
+            reloadBrowser(event);
+        });
+
+        //CSS
+        gulp.watch([options.src + '/{app,components}/**/*.css', options.src + '/css/**/*.css'], function (event) {
+            if (isOnlyChange(event)) {
+                reloadBrowser(event)
+            } else {
+                gulp.start('inject');
+                reloadBrowser(event, true);
+            }
+        });
+
+        //JS
+        gulp.watch([options.src + '/{app,components}/**/*.js', options.src + '/js/**/*.js'], function (event) {
+            if (isOnlyChange(event)) {
+                gulp.start('scripts');
+                reloadBrowser(event);
+            } else {
+                gulp.start('inject');
+                reloadBrowser(event, true);
+            }
         });
     });
 };
+
+function reloadBrowser(event, isDelayed, millis) {
+    //zavysi to od scripts + inject tasku casu kolko maju dokopy a podla toho zladit
+    var defaultMillis = 800;
+
+    if (isDelayed) {
+        setTimeout(function () {
+            browserSync.reload(event.path);
+        }, parseInt(millis) || 300);
+    }
+    else {
+        browserSync.reload(event.path);
+    }
+}
