@@ -2,6 +2,18 @@
     <div class="container">
         <div class="col-md-12">
             <h2 class="title">Languages</h2>
+
+            <div class="row">
+                <div ng-repeat="lang in languages" class="col-md-3">
+                    <img ng-src="{{lang.img}}" alt="{{lang.title}}"/>
+
+                    <h3>{{lang.title}}</h3>
+                    <h6>{{lang.level}}</h6>
+
+                    <p class="text-left">{{lang.description}}</p>
+                </div>
+            </div>
+
         </div>
     </div>
     <!--/.container-->
