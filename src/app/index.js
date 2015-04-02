@@ -1,3 +1,11 @@
 'use strict';
 
-angular.module('portfolio', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize']);
+angular.module('portfolio', [
+    'portfolio.sectionLanguages',
+
+
+    'ngAnimate',
+    'ngCookies',
+    'ngTouch',
+    'ngSanitize'
+]);
