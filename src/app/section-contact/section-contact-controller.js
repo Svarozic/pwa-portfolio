@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('portfolio.sectionContact')
-  .controller('SectionContactCtrl', function ($scope) {
+  .controller('SectionContactCtrl', function () {
 
   });
