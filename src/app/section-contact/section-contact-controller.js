@@ -15,6 +15,8 @@ angular.module('portfolio.sectionContact')
       textError: false
     };
 
+    $scope.mailInProgress = false;
+
     $scope.checkFirstName = function () {
       $scope.contact.firstNameError = !($scope.contact.firstName && $scope.contact.firstName.length && $scope.contact.firstName.length > 0);
     };
@@ -42,37 +44,46 @@ angular.module('portfolio.sectionContact')
       $scope.checkEmail();
       $scope.checkText();
 
-      //TODO dokoncit testnutt mail
-
-      if (!$scope.contact.firstNameError && !$scope.contact.lastNameError
-        && !$scope.contact.emailError && !$scope.contact.textError) {
+      if (!$scope.contact.firstNameError && !$scope.contact.lastNameError && !$scope.contact.emailError && !$scope.contact.textError) {
+        $scope.mailInProgress = true;
         var mailData = {
           'key': 'T_9ZKsoB9JJ4IoX1Tk5DFA',
           'message': {
-            'from_email': 'it-portfolio@gmail.com',
-            'to': [
-              {
-                'email': 'petranikpeter@gmail.com',
-                'name': 'Name',
-                'type': 'to'
-              }
-            ],
+            'to': [{'email': 'petranikpeter@gmail.com'}],
+            'from_email': $scope.contact.email,
             'autotext': 'true',
-            'subject': 'IT_PORTFOLIO_MSG',
-            'html': 'TEXT'
+            'subject': 'IT_PORTFOLIO_MSG' + $scope.contact.firstName + ' ' + $scope.contact.lastName,
+            'html': '<b>' + $scope.contact.firstName + ' ' + $scope.contact.lastName + '</b><br/>' +
+            '<b>' + $scope.contact.phone + '</b><br/>' +
+            '<b>' + $scope.contact.email + '</b><br/>' +
+            '<p>' + $scope.contact.text + '</p>'
           }
         };
         $http.post('https://mandrillapp.com/api/1.0/messages/send.json', mailData)
-          .success(function (data) {
-            console.log(angular.toJson(data));
+          .success(function () {
+            $scope.mailInProgress = false;
+            clearContactForm();
           })
-          .error(function (err) {
-            console.log(angular.toJson(err));
+          .error(function () {
+            $scope.mailInProgress = false;
           });
       }
-      else {
-        console.log('contact form not valid');
-      }
     };
-  })
-;
+
+    /**
+     * Vycisti scope premenne pre formular
+     */
+    function clearContactForm() {
+      $scope.contact = {
+        firstName: undefined,
+        firstNameError: false,
+        lastName: undefined,
+        lastNameError: false,
+        email: undefined,
+        emailError: false,
+        phone: undefined,
+        text: undefined,
+        textError: false
+      };
+    }
+  });
