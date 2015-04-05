@@ -32,6 +32,10 @@ angular.module('portfolio.sectionContact')
       $scope.contact.textError = (!$scope.contact.text || !$scope.contact.text.length || $scope.contact.text.length < 1 || $scope.contact.text.length > $scope.msgMaxLenght);
     };
 
+    /**
+     * Posielanie mail cez madrill
+     * https://mandrillapp.com/api/docs/messages.JSON.html#method=send
+     */
     $scope.sendEmail = function () {
       $scope.checkFirstName();
       $scope.checkLastName();
