@@ -1,0 +1,30 @@
+.language-parallax {
+  background: url('/img/parallax.jpg') center center no-repeat fixed;
+}
+
+.languages {
+  position: relative;
+  z-index: 2;
+}
+
+.languages h2 {
+  color: #FFFFFF;
+}
+
+.languages .item img {
+  width: 128px;
+  height: 128px;
+}
+
+.languages .item h2 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.languages .item h6 {
+  color: #EEEEEE;
+  line-height: 1.5;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 15px;
+}

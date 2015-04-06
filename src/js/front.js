@@ -12,7 +12,7 @@ $(function () {
     contactForm();
     map();
     counters();
-    parallax();
+  //parallax();
     demo();
 });
 
