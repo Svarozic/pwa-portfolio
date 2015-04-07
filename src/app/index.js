@@ -12,7 +12,6 @@ angular.module('portfolio', [
   'gryfonnlair.scrollTo',
 
   'ngMaterial',
-  'ngAnimate',
   'ngCookies',
   'ngTouch',
   'ngSanitize'

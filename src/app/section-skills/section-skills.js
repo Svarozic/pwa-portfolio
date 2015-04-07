@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('portfolio.sectionSkills', []);
+angular.module('portfolio.sectionSkills', [
+  'ngAnimate'
+]);

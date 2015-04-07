@@ -2,6 +2,9 @@
 
 angular.module('portfolio.sectionSkills')
   .controller('SectionSkillsCtrl', function ($scope) {
+
+    //TODO spravit ze filter na meno ak medzera tak dam ||
+
     $scope.skills = [
       'JavaScript',
       'AngularJS',
