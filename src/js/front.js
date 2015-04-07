@@ -75,6 +75,7 @@ function demo() {
  *  =======================================*/
 
 function animations() {
+    //TODO zmazat celu metodu, netreba lebo riesim to takt cez direktivu, pozriet ci este niekde modernizer
 
     if (Modernizr.csstransitions) {
 
