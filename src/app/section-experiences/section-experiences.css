@@ -8,10 +8,16 @@
 }
 
 .experiences .heading {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 500;
-  margin-bottom: 20px;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.experiences .period {
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .experiences p {
