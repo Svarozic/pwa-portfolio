@@ -1,0 +1,20 @@
+/*COPY z bootstrap theme sekcia SERVICES
+*/
+
+.experiences img {
+  width: 154px;
+  height: 54px;
+  background: #FFFFFF;
+}
+
+.experiences .heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.experiences p {
+  font-size: 15px;
+  text-align: justify;
+}
