@@ -3,20 +3,31 @@
     <div class="row">
 
       <div class="col-sm-12">
-        <h2 class="title" waypoint-animation data-animation="fadeInDown">Skills</h2>
+        <h2 class="title" waypoint-animation data-animation="fadeInDown">IT Skills</h2>
       </div>
 
       <div class="row filter-bar">
-        <div class="icon col-xs-offset-2 col-xs-1 col-md-offset-3 col-md-1"><i class="fa fa-search"></i></div>
+        <div class="icon col-xs-offset-2 col-xs-1 col-md-offset-2 col-md-1"><i class="fa fa-search"></i></div>
 
-        <md-input-container class="col-xs-7 col-md-5" md-no-float>
+        <md-input-container class="col-xs-7 col-md-7" md-no-float>
           <input ng-model="filterText" type="text" placeholder="Skills filter">
         </md-input-container>
       </div>
       <!--.row filter-bar -->
 
     </div>
-    <!--.row-->
+    <!--.row filter-->
+
+    <div class="row skill-list">
+      <div class="col-md-offset-2 col-md-8">
+        <span class="label label-primary"
+              ng-repeat="s in skills | filter:filterText | orderBy">
+        {{s}}
+        </span>
+      </div>
+    </div>
+    <!--.row skilllist-->
   </div>
+  <!--filter container-->
 </div>
 

@@ -1,3 +1,7 @@
+.skills {
+  min-height: 600px;
+}
+
 .skills .filter-bar .icon {
   font-size: 24px;
   text-align: center;
@@ -8,4 +12,16 @@
     font-size: 20px;
     text-align: center;
   }
+}
+
+.skills .skill-list span {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
