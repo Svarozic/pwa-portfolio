@@ -1,5 +1,8 @@
 'use strict';
 
+/* global $ */
+/* global window */
+
 angular.module('portfolio.sectionIntro')
   .directive('sectionIntro', function () {
     return {
@@ -8,13 +11,13 @@ angular.module('portfolio.sectionIntro')
       scope: true,
       templateUrl: 'app/section-intro/section-intro.html',
       link: function (scope, element) {
-        var screenWidth = $(window).width() + "px";
+        var screenWidth = $(window).width() + 'px';
         var screenHeight = '';
         if ($(window).height() > 500) {
-          screenHeight = $(window).height() + "px";
+          screenHeight = $(window).height() + 'px';
         }
         else {
-          screenHeight = "500px";
+          screenHeight = '500px';
         }
 
         element.css({

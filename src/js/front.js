@@ -166,11 +166,11 @@ function counters() {
  * parallax
  *  =======================================*/
 
-function parallax() {
-
-    $('.text-parallax').parallax("50%", 0.1);
-
-}
+//function parallax() {
+//
+//    $('.text-parallax').parallax("50%", 0.1);
+//
+//}
 
 /* =========================================
  *  masonry

@@ -14,13 +14,13 @@
  * <e waypoint-animation animation="ANIMATION_CLASS" [hover-animation="ANIMATION_CLASS"] >
  */
 
+/* global Modernizr */
 
 angular.module('gryfonnlair.waypoint', [])
     .directive('waypointAnimation', function () {
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
-                /* global Modernizr */
                 if (Modernizr.csstransitions) {
 
 
