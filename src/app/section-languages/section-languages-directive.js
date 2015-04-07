@@ -15,7 +15,7 @@ angular.module('portfolio.sectionLanguages')
             /**
              * Oddelena tmpl cesta od rootu indexu
              */
-            templateUrl: 'app/section-languages/section-language.html',
+            templateUrl: 'app/section-languages/section-languages.html',
             /**
              * Cez osobitny file
              */
