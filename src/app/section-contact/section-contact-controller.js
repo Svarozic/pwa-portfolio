@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('portfolio.sectionContact')
-  .controller('SectionContactCtrl', function ($scope, $http) {
+  .controller('SectionContactCtrl', function ($scope, $http, $timeout) {
     $scope.msgMaxLenght = 250;
     $scope.contact = {
       firstName: undefined,
@@ -14,6 +14,8 @@ angular.module('portfolio.sectionContact')
       text: undefined,
       textError: false
     };
+
+    $scope.isWobbling = false;
 
     $scope.mailInProgress = false;
 
@@ -49,8 +51,8 @@ angular.module('portfolio.sectionContact')
         var mailData = {
           'key': 'T_9ZKsoB9JJ4IoX1Tk5DFA',
           'message': {
-            'to': [{'email': 'petranikpeter@gmail.com'}],
-            'from_email': $scope.contact.email,
+            'to': [{'email': 'gryfonn@seznam.cz'}],
+            'from_email': 'it.portfolio@github.com',
             'autotext': 'true',
             'subject': 'IT_PORTFOLIO_MSG' + $scope.contact.firstName + ' ' + $scope.contact.lastName,
             'html': '<b>' + $scope.contact.firstName + ' ' + $scope.contact.lastName + '</b><br/>' +
@@ -67,6 +69,13 @@ angular.module('portfolio.sectionContact')
           .error(function () {
             $scope.mailInProgress = false;
           });
+      }
+      else {
+        $scope.isWobbling = true;
+
+        $timeout(function () {
+          $scope.isWobbling = false;
+        }, 1000);
       }
     };
 

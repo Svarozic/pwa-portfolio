@@ -74,6 +74,8 @@
               <md-progress-circular ng-show="mailInProgress" md-mode="indeterminate"></md-progress-circular>
               <md-button class="contact-sent-btn md-primary md-hue-2"
                          ng-show="!mailInProgress"
+                         ng-disabled="isWobbling"
+                         ng-class="{animated: isWobbling, wobble: isWobbling}"
                          ng-click="sendEmail()">Send message
               </md-button>
             </div>
