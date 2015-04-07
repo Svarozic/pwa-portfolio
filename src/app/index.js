@@ -1,12 +1,14 @@
 'use strict';
 
 angular.module('portfolio', [
-  'portfolio.sectionLanguages',
-  'portfolio.sectionContact',
+    'portfolio.sectionLanguages',
+    'portfolio.sectionContact',
 
-  'ngMaterial',
-  'ngAnimate',
-  'ngCookies',
-  'ngTouch',
-  'ngSanitize'
+    'gryfonnlair.waypoint',
+
+    'ngMaterial',
+    'ngAnimate',
+    'ngCookies',
+    'ngTouch',
+    'ngSanitize'
 ]);
