@@ -1,6 +1,7 @@
 'use strict';
 
 angular.module('portfolio', [
+  'portfolio.sectionIntro',
     'portfolio.sectionLanguages',
     'portfolio.sectionContact',
 

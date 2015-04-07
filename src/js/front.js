@@ -4,16 +4,16 @@ if ($.cookie("theme_csspath")) {
 
 $(function () {
 
-    animations();
+  animations();//data-animate riesi
     sliders();
-    fullScreenContainer();
-    utils();
-    sliding();
-    contactForm();
+  //fullScreenContainer();//intro uz mozem upratat
+  utils();//bootstrap tooltipy a .external pre linky prec von
+  sliding(); // scrollTo z nav panela
+  //contactForm(); //contact form php req
     map();
     counters();
   //parallax();
-    demo();
+  //  demo(); netusim co
 });
 
 $(window).load(function () {
@@ -45,29 +45,30 @@ $(window).resize(function () {
 
 function demo() {
 
-    if ($.cookie("theme_csspath")) {
-        $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
-    }
-
-    $("#colour").change(function () {
-
-        if ($(this).val !== '') {
-
-            var colour = $(this).val();
-            var introImage = $('body').find('#intro .item');
-
-            introImage.removeClass();
-            introImage.addClass('item');
-            introImage.addClass(colour);
-
-
-            var theme_csspath = 'css/style.' + $(this).val() + '.css';
-            $('link#theme-stylesheet').attr("href", theme_csspath);
-            $.cookie("theme_csspath", theme_csspath, {expires: 365, path: '/'});
-        }
-
-        return false;
-    });
+  //TODO netusim co
+  //if ($.cookie("theme_csspath")) {
+  //    $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
+  //}
+  //
+  //$("#colour").change(function () {
+  //
+  //    if ($(this).val !== '') {
+  //
+  //        var colour = $(this).val();
+  //        var introImage = $('body').find('#intro .item');
+  //
+  //        introImage.removeClass();
+  //        introImage.addClass('item');
+  //        introImage.addClass(colour);
+  //
+  //
+  //        var theme_csspath = 'css/style.' + $(this).val() + '.css';
+  //        $('link#theme-stylesheet').attr("href", theme_csspath);
+  //        $.cookie("theme_csspath", theme_csspath, {expires: 365, path: '/'});
+  //    }
+  //
+  //    return false;
+  //});
 }
 
 /* =========================================
@@ -322,20 +323,21 @@ $('#detail .close').click(function () {
 
 function fullScreenContainer() {
 
-    var screenWidth = $(window).width() + "px";
-    var screenHeight = '';
-    if ($(window).height() > 500) {
-        screenHeight = $(window).height() + "px";
-    }
-    else {
-        screenHeight = "500px";
-    }
-
-
-    $("#intro, #intro .item").css({
-        width: screenWidth,
-        height: screenHeight
-    });
+  //TODO intro directiva to robi
+  //var screenWidth = $(window).width() + "px";
+  //var screenHeight = '';
+  //if ($(window).height() > 500) {
+  //    screenHeight = $(window).height() + "px";
+  //}
+  //else {
+  //    screenHeight = "500px";
+  //}
+  //
+  //
+  //$("#intro, #intro .item").css({
+  //    width: screenWidth,
+  //    height: screenHeight
+  //});
 }
 
 /* =========================================
@@ -457,23 +459,24 @@ function waypointsRefresh() {
 /* ajax contact form */
 
 function contactForm() {
-    $("#contact-form").submit(function () {
-
-        var url = "contact.php"; // the script where you handle the form input.
-
-        $.ajax({
-            type: "POST",
-            url: url,
-            data: $(this).serialize(), // serializes the form's elements.
-            success: function (data) {
-                var messageAlert = 'alert-' + data.type;
-                var messageText = data.message;
-                var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                if (messageAlert && messageText) {
-                    $('#contact-form').find('.messages').html(alertBox);
-                }
-            }
-        });
-        return false; // avoid to execute the actual submit of the form.
-    });
+  //TODO nie diki mam vlastny contact
+  //$("#contact-form").submit(function () {
+  //
+  //    var url = "contact.php"; // the script where you handle the form input.
+  //
+  //    $.ajax({
+  //        type: "POST",
+  //        url: url,
+  //        data: $(this).serialize(), // serializes the form's elements.
+  //        success: function (data) {
+  //            var messageAlert = 'alert-' + data.type;
+  //            var messageText = data.message;
+  //            var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable animated bounceIn"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+  //            if (messageAlert && messageText) {
+  //                $('#contact-form').find('.messages').html(alertBox);
+  //            }
+  //        }
+  //    });
+  //    return false; // avoid to execute the actual submit of the form.
+  //});
 }
