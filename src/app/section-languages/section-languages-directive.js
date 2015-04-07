@@ -20,12 +20,12 @@ angular.module('portfolio.sectionLanguages')
              * Cez osobitny file
              */
             controller: 'SectionLanguagesCtrl',
-          link: function (scope, element, attrs) {
+          link: function (scope, element) {
             //jqlite verzia
             //element.children().eq(1).parallax("50%", 0.1);
 
             //JQuery lebo uz ho mam inde
-            element.parallax("50%", 0.1);
+            element.parallax('50%', 0.1);
           }
         };
     });
