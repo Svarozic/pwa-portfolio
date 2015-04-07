@@ -2,14 +2,15 @@
 
 angular.module('portfolio', [
   'portfolio.sectionIntro',
-    'portfolio.sectionLanguages',
-    'portfolio.sectionContact',
+  'portfolio.sectionAbout',
+  'portfolio.sectionLanguages',
+  'portfolio.sectionContact',
 
-    'gryfonnlair.waypoint',
+  'gryfonnlair.waypoint',
 
-    'ngMaterial',
-    'ngAnimate',
-    'ngCookies',
-    'ngTouch',
-    'ngSanitize'
+  'ngMaterial',
+  'ngAnimate',
+  'ngCookies',
+  'ngTouch',
+  'ngSanitize'
 ]);
