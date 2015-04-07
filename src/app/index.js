@@ -3,6 +3,7 @@
 angular.module('portfolio', [
   'portfolio.sectionIntro',
   'portfolio.sectionAbout',
+  'portfolio.sectionExperiences',
   'portfolio.sectionLanguages',
   'portfolio.sectionContact',
 
