@@ -8,6 +8,7 @@ angular.module('portfolio', [
   'portfolio.sectionContact',
 
   'gryfonnlair.waypoint',
+  'gryfonnlair.scrollTo',
 
   'ngMaterial',
   'ngAnimate',
