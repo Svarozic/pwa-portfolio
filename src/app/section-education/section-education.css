@@ -1,0 +1,12 @@
+.education-parallax {
+  background: url('/img/parallax-education.jpg') center center no-repeat fixed;
+}
+
+.education {
+  position: relative;
+  z-index: 2;
+}
+
+.education h2 {
+  color: #FFFFFF;
+}
