@@ -20,11 +20,20 @@
   color: #FFFFFF;
   text-transform: uppercase;
   margin: 20px;
+  text-shadow: 1px 1px #000000;
 }
 
-.languages .item h5 {
+.languages .item h4 {
   color: #EEEEEE;
-  line-height: 1.5;
+  line-height: 1.2;
   font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   margin: 15px;
+  text-shadow: 1px 1px #000000;
+}
+
+@media (max-width: 767px) {
+  .languages .item h4 {
+    font-size: 18px;
+  }
 }

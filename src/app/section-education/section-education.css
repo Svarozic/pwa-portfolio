@@ -10,3 +10,30 @@
 .education h2 {
   color: #FFFFFF;
 }
+
+.education .item h2 {
+  color: #FFFFFF;
+  text-shadow: 1px 1px #000000;
+  margin: 10px 0px 0px;
+}
+
+.education .item h4 {
+  color: #EEEEEE;
+  line-height: 1.2;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-shadow: 1px 1px #000000;
+  margin: 5px 0px 10px;
+}
+
+@media (max-width: 767px) {
+  .education .item h4 {
+    font-size: 18px;
+  }
+}
+
+.education .item h3 {
+  color: #FFFFFF;
+  margin: 5px 0px 40px;
+  text-shadow: 1px 1px #000000;
+}

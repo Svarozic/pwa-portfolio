@@ -9,11 +9,17 @@
         <div class="col-md-3 item"
              waypoint-animation data-animation="fadeInUp"
              ng-repeat="eduItem in items">
-          <h2>TEST</h2>
+          <h2>{{eduItem.title}}</h2>
+          <h4>{{eduItem.description}}</h4>
 
-          <h3>H3</h3>
-          <h5>H5</h5>
+          <h3>
+            <span class="counter">{{eduItem.period.from}}</span>
+            <span ng-if="eduItem.period.to">&mdash;</span>
+            <span class="counter" ng-if="eduItem.period.to">{{eduItem.period.to}}</span>
+          </h3>
+
         </div>
+        <!--ng-repeat -->
       </div>
       <!--row-->
 
