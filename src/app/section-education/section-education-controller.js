@@ -1,5 +1,7 @@
 'use strict';
 
+/* global $ */
+
 angular.module('portfolio.sectionEducation')
   .controller('SectionEducationCtrl', function ($scope, $timeout) {
     $scope.items = [

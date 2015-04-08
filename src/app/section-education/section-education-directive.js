@@ -10,11 +10,6 @@ angular.module('portfolio.sectionEducation')
       controller: 'SectionEducationCtrl',
       link: function (scope, element) {
         element.parallax('50%', 0.1);
-
-        //$('.counter', element).counterUp({
-        //  delay: 10,
-        //  time: 1000
-        //});
       }
     };
   });
