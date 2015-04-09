@@ -20,6 +20,10 @@ angular.module('portfolio.sectionSkills')
       'MongoDB',
       'RequireJS',
       'JQuery',
+      'ExpressJS',
+      'UnderscoreJS',
+      'Lodash',
+      'RSVP.JS',
 
       'MySQL',
       'PostgreSQL',
@@ -47,6 +51,8 @@ angular.module('portfolio.sectionSkills')
       'Ivy',
       'Curl',
       'Jenkins CI',
+      'Maven',
+      'Gradle',
 
       //DERIVATIVES special
       'Apache SOLR',
