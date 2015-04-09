@@ -7,6 +7,7 @@ angular.module('portfolio', [
   'portfolio.sectionLanguages',
   'portfolio.sectionSkills',
   'portfolio.sectionEducation',
+  'portfolio.sectionProjects',
   'portfolio.sectionContact',
 
   'gryfonnlair.waypoint',
