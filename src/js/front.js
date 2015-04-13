@@ -6,7 +6,7 @@ $(function () {
 
   animations();//data-animate riesi
     sliders();
-  //fullScreenContainer();//intro uz mozem upratat
+  fullScreenContainer();
   utils();//bootstrap tooltipy a .external pre linky prec von
   sliding(); // scrollTo z nav panela
   //contactForm(); //contact form php req
@@ -315,29 +315,26 @@ function closeReference() {
 
 $('#detail .close').click(function () {
     closeReference(true);
-})
+});
 
 /* =========================================
  * full screen intro
  *  =======================================*/
 
 function fullScreenContainer() {
+  var screenWidth = $(window).width() + "px";
+  var screenHeight = '';
+  if ($(window).height() > 500) {
+      screenHeight = $(window).height() + "px";
+  }
+  else {
+      screenHeight = "500px";
+  }
 
-  //TODO intro directiva to robi
-  //var screenWidth = $(window).width() + "px";
-  //var screenHeight = '';
-  //if ($(window).height() > 500) {
-  //    screenHeight = $(window).height() + "px";
-  //}
-  //else {
-  //    screenHeight = "500px";
-  //}
-  //
-  //
-  //$("#intro, #intro .item").css({
-  //    width: screenWidth,
-  //    height: screenHeight
-  //});
+  $("#intro, #intro .item").css({
+      width: screenWidth,
+      height: screenHeight
+  });
 }
 
 /* =========================================
@@ -450,11 +447,11 @@ function scrollSpyRefresh() {
 }
 
 /* refresh waypoints */
-function waypointsRefresh() {
-    setTimeout(function () {
-        $.waypoints('refresh');
-    }, 1000);
-}
+//function waypointsRefresh() {
+//    setTimeout(function () {
+//        $.waypoints('refresh');
+//    }, 1000);
+//}
 
 /* ajax contact form */
 
