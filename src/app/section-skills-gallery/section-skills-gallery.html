@@ -6,6 +6,7 @@
     </div>
 
     <img class="skill-img"
+         waypoint-animation data-animation="fadeInUp"
          ng-repeat="i in images|orderBy:filterByNameLength"
          ng-src="{{imagesSkillsDir + i.src}}"
          title="{{i.title}}"
