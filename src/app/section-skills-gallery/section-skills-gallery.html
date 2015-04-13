@@ -1,3 +1,14 @@
-<div class="section text-gradient" id="skills-gallery">
-  <h1>TODO </h1>
+<div class="section text-gradient text-center" id="skills-gallery">
+  <div class="container">
+
+    <div class="col-md-12">
+      <h2 class="title" waypoint-animation data-animation="fadeInDown">Technologies used</h2>
+    </div>
+
+    <img class="skill-img"
+         ng-repeat="i in images|orderBy:filterByNameLength"
+         ng-src="{{imagesSkillsDir + i.src}}"
+         title="{{i.title}}"
+         alt="{{i.title}}"/>
+  </div>
 </div>
