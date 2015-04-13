@@ -3,6 +3,9 @@
 angular.module('portfolio.sectionSkillsGallery')
   .controller('SectionSkillsGalleryCtrl', function ($scope) {
 
+    //TODO zjednotit skills a gallery tak ze spravim service kde bude objekt {imgSrc title} a v skills direktive vytiahnem z service len title a pridam do pola
+    //kde uz budu specialne skill ako germna/english atd
+
     $scope.filterByNameLength = function (s) {
       return s.title.length ? s.title.length : 0;
     };

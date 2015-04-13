@@ -76,7 +76,14 @@ angular.module('portfolio.sectionSkills')
       'Gimp',
       'Adobe Illustrator',
 
-      'Linux'
+      'Linux',
+
+
+      //another type of skills
+      'German',
+      'English',
+      'Sovak',
+      'Kanban'
     ];
 
   });
