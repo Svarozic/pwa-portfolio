@@ -61,6 +61,7 @@ angular.module('portfolio.sectionSkills')
       'JIRA',
 
       'XML',
+      'XPath',
       'JSON',
       'HTML',
       'CSS',
