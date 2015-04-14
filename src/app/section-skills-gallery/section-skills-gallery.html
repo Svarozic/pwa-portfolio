@@ -2,14 +2,14 @@
   <div class="container">
 
     <div class="col-md-12">
-      <h2 class="title" waypoint-animation data-animation="fadeInDown">Technologies used</h2>
+      <h2 class="title" waypoint-animation data-animation="fadeInDown">What I have touched</h2>
     </div>
 
     <img class="skill-img"
          waypoint-animation data-animation="fadeInUp"
-         ng-repeat="i in images|orderBy:filterByNameLength"
-         ng-src="{{imagesSkillsDir + i.src}}"
-         title="{{i.title}}"
-         alt="{{i.title}}"/>
+         ng-repeat="s in skills|orderBy:filterByNameLength"
+         ng-src="{{imagesSkillsDir + s.src}}"
+         title="{{s.title}}"
+         alt="{{s.title}}"/>
   </div>
 </div>
