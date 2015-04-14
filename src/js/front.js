@@ -13,7 +13,6 @@ $(window).resize(function () {
 
   if (windowWidth !== newWindowWidth) {
     setTimeout(function () {
-      $(this).alignElementsSameHeight();
       fullScreenContainer();
     }, 205);
     windowWidth = newWindowWidth;

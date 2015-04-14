@@ -14,6 +14,8 @@ angular.module('portfolio.sectionSkills')
      */
     $scope.skills = $scope.skills.concat([
       //another type of skills
+      'Testing',
+
       'German',
       'English',
       'Slovak',
