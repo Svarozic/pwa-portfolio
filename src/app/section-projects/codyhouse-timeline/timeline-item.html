@@ -1,17 +1,17 @@
 <div class="cd-timeline-block">
   <div class="cd-timeline-img cd-blue" waypoint-animation data-animation="bounceIn">
     <!--<img src="img/cd-icon-picture.svg" alt="Picture">-->
-    <img ng-src="{{img}}" alt="{{alt}}">
+    <img src="img/codyhouse-timeline/cd-icon-location.svg">
   </div>
   <!-- cd-timeline-img -->
 
   <div class="cd-timeline-content" waypoint-animation data-animation="fadeIn">
-    <h2>{{header}}</h2>
+    <h2>{{project.title}}</h2>
 
-    <p>{{content}}</p>
+    <p>{{project.desc}}</p>
     <!--TODO scrollTo hore alebo inde-->
     <!--<a href="#0" class="cd-read-more">Read more</a>-->
-    <span class="cd-date">{{date}}</span>
+    <span class="cd-date">{{project.time}}</span>
   </div>
   <!-- cd-timeline-content -->
 </div>

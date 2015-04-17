@@ -16,12 +16,11 @@ angular.module('gryfonnLair.codyhouseTimeline')
       replace: true,
       //one-way binding, !! copy as String value !!
       scope: {
-        img: '@img',
-        alt: '@alt',
-        header: '@header',
-        content: '@content',
-        date: '@date'
+        project: '=project'
       },
-      templateUrl: 'components/codyhouse-timeline/timeline-item.html'
+      templateUrl: 'app/section-projects/codyhouse-timeline/timeline-item.html',
+      controller: function ($scope) {
+        console.log(JSON.stringify($scope.project))
+      }
     };
   });
