@@ -14,13 +14,10 @@ angular.module('gryfonnLair.codyhouseTimeline')
       require: '^cdTimelineContainer',
       restrict: 'E',
       replace: true,
-      //one-way binding, !! copy as String value !!
+      //two-way binding
       scope: {
         project: '=project'
       },
-      templateUrl: 'app/section-projects/codyhouse-timeline/timeline-item.html',
-      controller: function ($scope) {
-        console.log(JSON.stringify($scope.project))
-      }
+      templateUrl: 'app/section-projects/codyhouse-timeline/timeline-item.html'
     };
   });
