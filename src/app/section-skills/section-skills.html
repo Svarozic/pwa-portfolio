@@ -6,7 +6,7 @@
         <h2 class="title" waypoint-animation data-animation="fadeInDown">Skills</h2>
       </div>
 
-      <div class="row filter-bar">
+      <div class="row filter-bar" waypoint-animation data-animation="fadeIn">
         <div class="icon col-xs-offset-2 col-xs-1 col-md-offset-2 col-md-1"><i class="fa fa-search"></i></div>
 
         <md-input-container class="col-xs-7 col-md-7" md-no-float>
@@ -18,7 +18,7 @@
     </div>
     <!--.row filter-->
 
-    <div class="row skill-list">
+    <div class="row skill-list" waypoint-animation data-animation="fadeInUp">
       <div class="col-md-offset-2 col-md-8">
         <span class="label label-primary animated-skill"
               ng-repeat="s in skills | filter:filterText | orderBy">
