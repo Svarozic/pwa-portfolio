@@ -9,7 +9,7 @@ angular.module('portfolio.sectionEducation')
       templateUrl: 'app/section-education/section-education.html',
       controller: 'SectionEducationCtrl',
       link: function (scope, element) {
-        element.parallax('50%', 0.1);
+        element.parallax('50%', 0.08);
       }
     };
   });
