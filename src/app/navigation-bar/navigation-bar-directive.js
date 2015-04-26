@@ -1,5 +1,7 @@
 'use strict';
 
+/* global $ */
+
 angular.module('portfolio.navigationBar')
   .directive('navigationBar', function () {
     return {
