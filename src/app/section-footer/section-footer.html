@@ -7,33 +7,31 @@
 
         <p class="social">
           <a href="https://www.facebook.com/gryfonn" target="_blank"
-             class="external facebook" data-animate-hover="shake" data-animate="fadeInUp">
+             class="external facebook"
+             waypoint-animation data-animation="fadeIn" data-hover-animation="shake">
             <i class="fa fa-facebook"></i>
           </a>
           <a href="https://www.linkedin.com/in/petranikpeter" target="_blank"
-             class="external linkedin" data-animate-hover="shake" data-animate="fadeInUp">
+             class="external linkedin"
+             waypoint-animation data-animation="fadeIn" data-hover-animation="shake">
             <i class="fa fa-linkedin"></i>
           </a>
           <a href="https://plus.google.com/+PeterPetranik" target="_blank"
-             class="external gplus" data-animate-hover="shake" data-animate="fadeInUp">
+             class="external gplus"
+             waypoint-animation data-animation="fadeIn" data-hover-animation="shake">
             <i class="fa fa-google-plus"></i>
           </a>
           <a href="mailto:petranikpeter@gmail.com"
-             class="email" data-animate-hover="shake" data-animate="fadeInUp">
+             class="email"
+             waypoint-animation data-animation="fadeIn" data-hover-animation="shake">
             <i class="fa fa-envelope"></i>
           </a>
         </p>
       </div>
       <!-- /.6 -->
 
-      <div class="col-sm-6">
+      <div class="col-sm-6" waypoint-animation data-animation="fadeIn">
         <p>&copy; 2015 Ing. Peter Petraník. All rights reserved.</p>
-      </div>
-
-      <div class="col-sm-12">
-        <p class="template-bootstrapious">Template by <a href="http://www.bootstrapious.com">Bootstrap Templates</a>
-          with support from <a href="http://kakusei.cz">Designový nábytek</a>
-        </p>
       </div>
 
     </div>
@@ -41,4 +39,14 @@
 
   </div>
   <!-- /.container -->
+
+  <div class="row build-with" waypoint-animation data-animation="fadeInUp">
+    <p>Build with</p>
+
+    <img ng-src="img/footer/boostrapious.png">
+    <img ng-src="img/footer/gulp.png">
+    <img ng-src="img/footer/angular.png">
+    <img ng-src="img/footer/yeoman.png">
+  </div>
+  <!--/.row-->
 </div>

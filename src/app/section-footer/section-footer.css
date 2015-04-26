@@ -67,21 +67,22 @@ FOOTER
   }
 }
 
-#footer p.template-bootstrapious {
-  margin-top: 20px;
-  text-align: center;
-  color: #999999;
-  font-family: 'Roboto Slab', serif;
-  font-size: 14px;
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+.build-with p {
+  margin-top: 20px !important;
+  color: #999999 !important;
+  text-align: center !important;
 }
 
-#footer p.template-bootstrapious a {
-  color: #999999;
+.build-with img {
+  height: 60px;
+  opacity: 0.5;
+  margin: 10px 20px;
 }
 
 @media (max-width: 767px) {
-  #footer p.template-bootstrapious {
-    text-align: center;
+  .build-with img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
