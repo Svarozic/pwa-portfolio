@@ -192,11 +192,12 @@ INTRO
 }
 #intro .item h1 {
   font-size: 60px;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 40px;
   font-weight: 700;
   opacity: 0;
   filter: alpha(opacity=0);
+  text-transform: capitalize;
   -webkit-backface-visibility: hidden;
 }
 @media (max-width: 991px) {
