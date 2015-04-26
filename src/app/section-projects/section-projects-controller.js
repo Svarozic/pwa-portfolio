@@ -48,6 +48,8 @@ angular.module('portfolio.sectionProjects')
       {
         title: 'MWay: Junior Java developer',
         time: '2012-2013',
+        //TODO
+        desc: '',
         linkJob: true
       },
 
