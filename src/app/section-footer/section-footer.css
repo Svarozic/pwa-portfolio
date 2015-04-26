@@ -74,13 +74,14 @@ FOOTER
 }
 
 .build-with img {
-  height: 60px;
+  height: 50px;
   opacity: 0.5;
   margin: 10px 20px;
 }
 
 @media (max-width: 767px) {
   .build-with img {
+    height: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
