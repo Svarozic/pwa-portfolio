@@ -10,6 +10,7 @@ angular.module('portfolio', [
   'portfolio.sectionProjects',
   'portfolio.sectionSkillsGallery',
   'portfolio.sectionContact',
+  'portfolio.sectionFooter',
 
   'gryfonnlair.waypoint',
   'gryfonnlair.scrollTo',
