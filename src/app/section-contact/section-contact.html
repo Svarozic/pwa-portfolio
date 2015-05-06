@@ -1,93 +1,102 @@
 <div class="section contact" id="contact" waypoint-animation data-animation="bounceIn">
-  <div class="container">
-    <div class="col-md-12">
-      <h2 class="title">Contact me</h2>
+    <div class="container">
+        <div class="col-md-12">
+            <h2 class="title">Contact me</h2>
 
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
 
-          <div class="row">
+                    <div class="row">
+                        <md-input-container class="col-md-6" ng-class="{'md-input-invalid': contact.firstNameError}">
+                            <label class="text-left">First Name</label>
+                            <input type="text"
+                                   ng-model="contact.firstName"
+                                   ng-blur="checkFirstName()"
+                                   ng-change="checkFirstName()"
+                                   ng-disabled="mailInProgress">
 
-            <md-input-container class="col-md-6" ng-class="{'md-input-invalid': contact.firstNameError}">
-              <label class="text-left">First Name</label>
-              <input type="text"
-                     ng-model="contact.firstName"
-                     ng-blur="checkFirstName()"
-                     ng-change="checkFirstName()"
-                     ng-disabled="mailInProgress">
+                            <div ng-messages="" ng-show="contact.firstNameError">
+                                <div ng-message="required">First name is required.</div>
+                            </div>
+                        </md-input-container>
 
-              <div ng-messages="" ng-show="contact.firstNameError">
-                <div ng-message="required">First name is required.</div>
-              </div>
-            </md-input-container>
+                        <md-input-container class="col-md-6" ng-class="{'md-input-invalid': contact.lastNameError}">
+                            <label class="text-left">Last Name</label>
+                            <input type="text"
+                                   ng-model="contact.lastName"
+                                   ng-blur="checkLastName()"
+                                   ng-change="checkLastName()"
+                                   ng-disabled="mailInProgress">
 
-            <md-input-container class="col-md-6" ng-class="{'md-input-invalid': contact.lastNameError}">
-              <label class="text-left">Last Name</label>
-              <input type="text"
-                     ng-model="contact.lastName"
-                     ng-blur="checkLastName()"
-                     ng-change="checkLastName()"
-                     ng-disabled="mailInProgress">
+                            <div ng-messages="" ng-show="contact.lastNameError">
+                                <div ng-message="required">Last name is required.</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <!--./row meno priezvisko-->
 
-              <div ng-messages="" ng-show="contact.lastNameError">
-                <div ng-message="required">Last name is required.</div>
-              </div>
-            </md-input-container>
+                    <div class="row">
+                        <md-input-container class="col-md-6" ng-class="{'md-input-invalid': contact.emailError}">
+                            <label class="text-left">Email</label>
+                            <input type="email"
+                                   ng-model="contact.email"
+                                   ng-blur="checkEmail()"
+                                   ng-change="checkEmail()"
+                                   ng-disabled="mailInProgress">
 
-            <md-input-container class="col-md-6" ng-class="{'md-input-invalid': contact.emailError}">
-              <label class="text-left">Email</label>
-              <input type="email"
-                     ng-model="contact.email"
-                     ng-blur="checkEmail()"
-                     ng-change="checkEmail()"
-                     ng-disabled="mailInProgress">
+                            <div ng-messages="" ng-show="contact.emailError">
+                                <div ng-message="required">Email in correct format is required.</div>
+                            </div>
+                        </md-input-container>
 
-              <div ng-messages="" ng-show="contact.emailError">
-                <div ng-message="required">Email in correct format is required.</div>
-              </div>
-            </md-input-container>
+                        <md-input-container class="col-md-6">
+                            <label class="text-left">Phone</label>
+                            <input type="text"
+                                   ng-model="contact.phone"
+                                   placeholder="+(COUNTRY_CODE) XXXXXXXXXX"
+                                   ng-disabled="mailInProgress">
+                        </md-input-container>
+                    </div>
+                    <!--.row mail phone-->
 
-            <md-input-container class="col-md-6">
-              <label class="text-left">Phone</label>
-              <input type="text"
-                     ng-model="contact.phone"
-                     placeholder="+(COUNTRY_CODE) XXXXXXXXXX"
-                     ng-disabled="mailInProgress">
-            </md-input-container>
+                    <div class="row">
+                        <md-input-container class="col-md-12"
+                                            ng-class="{'md-input-invalid': contact.textError}">
+                            <label class="text-left">Text</label>
+                            <textarea ng-model="contact.text"
+                                      ng-blur="checkText()"
+                                      ng-change="checkText()"
+                                      ng-disabled="mailInProgress">
+                            </textarea>
 
-            <md-input-container class="col-md-12"
-                                ng-class="{'md-input-invalid': contact.textError}">
-              <label class="text-left">Text</label>
-              <textarea ng-model="contact.text"
-                        ng-blur="checkText()"
-                        ng-change="checkText()"
-                        ng-disabled="mailInProgress"></textarea>
+                            <div class="md-char-counter">{{contact.text.length || 0}}/{{msgMaxLenght}}</div>
 
-              <div class="md-char-counter">{{contact.text.length || 0}}/{{msgMaxLenght}}</div>
+                            <div ng-messages="" ng-show="contact.textError">
+                                <div ng-message="required">Write message long from 0 to {{msgMaxLenght}} characters.</div>
+                            </div>
+                        </md-input-container>
+                    </div>
+                    <!--.row text-->
 
-              <div ng-messages="" ng-show="contact.textError">
-                <div ng-message="required">Write message long from 0 to {{msgMaxLenght}} characters.</div>
-              </div>
-            </md-input-container>
-
-            <div class="col-md-12" layout="row" layout-align="center">
-              <md-progress-circular ng-show="mailInProgress" md-mode="indeterminate"></md-progress-circular>
-              <md-button class="contact-sent-btn md-primary md-hue-2"
-                         ng-show="!mailInProgress"
-                         ng-disabled="isWobbling"
-                         ng-class="{animated: isWobbling, wobble: isWobbling}"
-                         ng-click="sendEmail()">Send message
-              </md-button>
+                    <div class="row">
+                        <div class="col-md-12" layout="row" layout-align="center">
+                            <md-progress-circular ng-show="mailInProgress" md-mode="indeterminate"></md-progress-circular>
+                            <md-button class="contact-sent-btn md-primary md-hue-2"
+                                       ng-show="!mailInProgress"
+                                       ng-disabled="isWobbling"
+                                       ng-class="{animated: isWobbling, wobble: isWobbling}"
+                                       ng-click="sendEmail()">Send message
+                            </md-button>
+                        </div>
+                    </div>
+                    <!--.row send btn-->
+                </div>
+                <!--.8-->
             </div>
-          </div>
-          <!--.row s formularom-->
+
+
         </div>
-        <!--.8-->
-      </div>
-
-
+        <!-- /.12 -->
     </div>
-    <!-- /.12 -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 </div>
