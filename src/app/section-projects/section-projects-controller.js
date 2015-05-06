@@ -3,19 +3,19 @@
 angular.module('portfolio.sectionProjects')
   .controller('SectionProjectsCtrl', function ($scope) {
 
-    $scope.test = {
-      title: 'Tuke Tank 3D',
-      time: '2011-2012',
-      desc: 'Special chosen way of school semester project for subject ‘Computer Graphic’. Remake of popular SEGA game Battle City in C# with XNA framework.',
-      link: 'https://www.youtube.com/watch?v=Xjyhh-8bzRo'
-    };
+    //TODO dat desc ako html a pouzivat v nom linky ako adresy
 
     $scope.projects = [
       {
         title: 'Tuke Tank 3D',
         time: '2011-2012',
         desc: 'Special chosen way of school semester project for subject ‘Computer Graphic’. Remake of popular SEGA game Battle City in C# with XNA framework.',
-        link: 'https://www.youtube.com/watch?v=Xjyhh-8bzRo'
+        link: 'https://www.youtube.com/watch?v=Xjyhh-8bzRo',
+        images: [
+          'tuke-tank-3d/1.png',
+          'tuke-tank-3d/2.png',
+          'tuke-tank-3d/3.png'
+        ]
       },
 
       {
