@@ -5,7 +5,8 @@
     "yargs": "^3.6.0"
   },
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "init": "npm install && bower install"
   },
   "devDependencies": {
     "browser-sync": "~2.1.4",
