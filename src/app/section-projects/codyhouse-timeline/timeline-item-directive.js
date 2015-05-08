@@ -1,20 +1,11 @@
 'use strict';
 
 angular.module('gryfonnLair.codyhouseTimeline')
-  .directive('cdTimelineContainer', function () {
-    return {
-      restrict: 'E',
-      replace: true,
-      transclude: true,
-      template: '<div id="cd-timeline" class="cd-container" ng-transclude></div>'
-    };
-  })
   .directive('cdTimeline', function () {
     return {
-      require: '^cdTimelineContainer',
       restrict: 'E',
       replace: true,
-      //two-way binding
+      //two-way binding, len koli tomu ze one-way sa berie ako text vzdy, a ja potrebuje objekt
       scope: {
         project: '=project'
       },
