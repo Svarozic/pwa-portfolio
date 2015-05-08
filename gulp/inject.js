@@ -17,14 +17,15 @@ module.exports = function (options) {
         ], {read: false});
 
         var injectScripts = gulp.src([
-            options.src + '/{app,components}/**/*.js',
-            '!' + options.src + '/{app,components}/**/*.spec.js',
-            '!' + options.src + '/{app,components}/**/*.mock.js',
+          options.src + '/{app,components}/**/*.js',
+          '!' + options.src + '/{app,components}/**/*.spec.js',
+          '!' + options.src + '/{app,components}/**/*.mock.js',
 
-            //gryfonn-gulp external kniznice v priecinku js ktore neboli pre bower
-            options.src + '/js/front.js',
-            options.src + '/js/jquery.counterup.min.js',
-          options.src + '/js/jquery.parallax-1.1.3.js'
+          //gryfonn-gulp external kniznice v priecinku js ktore neboli pre bower
+          options.src + '/js/front.js',
+          options.src + '/js/jquery.counterup.min.js',
+          options.src + '/js/jquery.parallax-1.1.3.js',
+          options.src + '/js/owl.carousel.js'
 
         ])
             .pipe($.angularFilesort())
