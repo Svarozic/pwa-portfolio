@@ -7,6 +7,10 @@ angular.module('portfolio.sectionProjects')
 
     var imagesProjectsDir = 'img/project-photos/';
 
+    $scope.test = function (project) {
+      console.log('AHOJ=' + project.title);
+    };
+
     $scope.projects = [
       {
         title: 'Tuke Tank 3D',

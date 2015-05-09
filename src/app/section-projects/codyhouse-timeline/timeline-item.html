@@ -12,8 +12,10 @@
     <!--TODO scrollTo hore alebo inde-->
 
     <span class="cd-timeline-gallery cd-blue"
+          ng-click="test()"
           waypoint-animation data-hover-animation="pulse">
-      <img src="img/codyhouse-timeline/cd-icon-gallery.svg">
+      <img src="img/codyhouse-timeline/cd-icon-gallery.svg"
+           ng-click="onGalleryClick(project)">
     </span>
 
     <span class="cd-date">{{project.time}}</span>
