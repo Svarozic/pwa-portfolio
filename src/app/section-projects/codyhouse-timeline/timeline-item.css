@@ -38,7 +38,7 @@ Main components
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: #5091da;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -93,7 +93,7 @@ Main components
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  border: 3px solid #5091da;
 }
 
 .cd-timeline-img img {
@@ -136,7 +136,7 @@ Main components
 }
 
 .cd-gray {
-  background: #526A7A;
+  background: #FFFFFF;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -148,6 +148,7 @@ Main components
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
+    border: 5px solid #5091da;
   }
 
   .cd-timeline-gallery {
@@ -161,7 +162,7 @@ Main components
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 2px 0 #d7e4ed;
+  box-shadow: 0 2px 0 #5091da;
 }
 
 .cd-timeline-content:after {
