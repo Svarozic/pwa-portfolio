@@ -5,6 +5,8 @@ angular.module('portfolio.sectionProjects')
 
     //TODO dat desc ako html a pouzivat v nom linky ako adresy
 
+    var imagesProjectsDir = 'img/project-photos/';
+
     $scope.projects = [
       {
         title: 'Tuke Tank 3D',
@@ -12,9 +14,11 @@ angular.module('portfolio.sectionProjects')
         desc: 'Special chosen way of school semester project for subject ‘Computer Graphic’. Remake of popular SEGA game Battle City in C# with XNA framework.',
         link: 'https://www.youtube.com/watch?v=Xjyhh-8bzRo',
         images: [
-          'tuke-tank-3d/1.png',
-          'tuke-tank-3d/2.png',
-          'tuke-tank-3d/3.png'
+          imagesProjectsDir + 'tuke-tank-3d/1.png',
+          imagesProjectsDir + 'tuke-tank-3d/2.png',
+          imagesProjectsDir + 'tuke-tank-3d/3.png',
+          imagesProjectsDir + 'tuke-tank-3d/4.png',
+          imagesProjectsDir + 'tuke-tank-3d/5.png'
         ]
       },
 
@@ -24,7 +28,14 @@ angular.module('portfolio.sectionProjects')
         desc: 'Participant in Imagine Cup by Microsoft, category Game Design: Phone. Team consisted of four people ' +
         'and my part of project was to develop Windows Phone application. This application, in form of game should ' +
         'represent mobile client for web application written in ASP.NET. Game was inspired by Travian.com, each building ' +
-        'should represent individual functionality from server side.'
+        'should represent individual functionality from server side.',
+        images: [
+          imagesProjectsDir + 'tuke-tank-3d/1.png',
+          imagesProjectsDir + 'tuke-tank-3d/2.png',
+          imagesProjectsDir + 'tuke-tank-3d/3.png',
+          imagesProjectsDir + 'tuke-tank-3d/4.png',
+          imagesProjectsDir + 'tuke-tank-3d/5.png'
+        ]
       },
 
       {
