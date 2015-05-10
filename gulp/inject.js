@@ -24,10 +24,7 @@ module.exports = function (options) {
           //gryfonn-gulp external kniznice v priecinku js ktore neboli pre bower
           options.src + '/js/front.js',
           options.src + '/js/jquery.counterup.min.js',
-          options.src + '/js/jquery.parallax-1.1.3.js',
-          options.src + '/js/velocity.min.js',
-          options.src + '/js/morphing-modal-window.js'
-
+          options.src + '/js/jquery.parallax-1.1.3.js'
         ])
             .pipe($.angularFilesort())
             .on('error', options.errorHandler('AngularFilesort'));
