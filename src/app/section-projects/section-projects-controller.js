@@ -7,9 +7,11 @@ angular.module('portfolio.sectionProjects')
 
     var imagesProjectsDir = 'img/project-photos/';
 
-    $scope.test = function (project) {
-      console.log('AHOJ=' + project.title);
+    $scope.onGalleryClick = function (project) {
+      $scope.selectedProject = project;
     };
+
+    $scope.selectedProject = null;
 
     $scope.projects = [
       {
