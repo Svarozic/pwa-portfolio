@@ -10,6 +10,7 @@
  */
 
 angular.module('portfolio.sectionProjects', [
+  'portfolio.factoryProjects',
   'gryfonnLair.codyhouseTimeline',
   'gryfonnLair.morphingModalWindow'
 ]);
