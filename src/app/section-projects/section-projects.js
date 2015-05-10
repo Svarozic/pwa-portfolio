@@ -5,6 +5,9 @@
  *
  * TIMELINE:
  * http://codyhouse.co/gem/vertical-timeline/
+ *
+ * Dialog:
+ * https://github.com/likeastore/ngDialog#api
  */
 
 angular.module('portfolio.sectionProjects', [
