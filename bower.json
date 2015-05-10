@@ -15,7 +15,8 @@
     "waypoints": "~2.0.5",
     "modernizr": "~2.6.2",
     "gmaps": "~0.4.15",
-    "angular-material": "~0.8.3"
+    "angular-material": "~0.8.3",
+    "ngDialog": "~0.4.0"
   },
   "devDependencies": {
     "angular-mocks": "~1.3.4"

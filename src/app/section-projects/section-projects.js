@@ -9,5 +9,9 @@
 
 angular.module('portfolio.sectionProjects', [
   'portfolio.factoryProjects',
-  'gryfonnLair.codyhouseTimeline'
+  'portfolio.projectDetail',
+
+  'gryfonnLair.codyhouseTimeline',
+
+  'ngDialog'
 ]);
