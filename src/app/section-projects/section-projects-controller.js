@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('portfolio.sectionProjects')
-  .controller('SectionProjectsCtrl', function ($scope, ProjectsFactory, ngDialog) {
+  .controller('SectionProjectsCtrl', function ($scope, ProjectsFactory) {
     //projekty cez factory
     $scope.projects = ProjectsFactory;
 
