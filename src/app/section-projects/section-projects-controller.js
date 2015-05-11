@@ -1,7 +1,9 @@
 'use strict';
 
+/* global $ */
+
 angular.module('portfolio.sectionProjects')
-  .controller('SectionProjectsCtrl', function ($scope, ProjectsFactory, $timeout) {
+  .controller('SectionProjectsCtrl', function ($scope, ProjectsFactory) {
 
     //projekty cez factory
     $scope.projects = ProjectsFactory;
@@ -16,7 +18,11 @@ angular.module('portfolio.sectionProjects')
       enableScroll(false);
     };
 
-    $scope.onGalleryClose = function () {
+
+    //TODO mobil dava event dalej na va bar
+    $scope.onGalleryClose = function (e) {
+      e.stopPropagation();
+      e.preventDefault();
       var modal = $('#projects-modal-window');
       modal.css('visibility', 'hidden');
       enableScroll(true);

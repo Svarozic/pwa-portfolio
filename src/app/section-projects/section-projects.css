@@ -6,10 +6,28 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(36, 35, 37, 0.9);
+  overflow-y: scroll;
+  text-align: center;
+  padding-top: 15px;
+}
 
-  opacity: 1;
-  -webkit-transition: opacity 0.1s 0s, visibility 0s 0s;
-  -moz-transition: opacity 0.1s 0s, visibility 0s 0s;
-  transition: opacity 0.1s 0s, visibility 0s 0s;
+#projects-modal-window img {
+  max-width: 100%;
+  display: block;
+  margin: auto auto 10px;
+}
+
+#projects-modal-window .close-modal {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+
+@media only screen and (min-width: 1170px) {
+  #projects-modal-window .close-modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
 }

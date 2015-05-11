@@ -12,7 +12,6 @@
 
 angular.module('portfolio.sectionProjects', [
   'portfolio.factoryProjects',
-  'portfolio.projectDetail',
 
   'gryfonnLair.codyhouseTimeline'
 ]);

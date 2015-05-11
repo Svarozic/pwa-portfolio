@@ -2,6 +2,10 @@
 
 //TODO dat desc ako html a pouzivat v nom linky ako adresy
 
+//TODO tookens treba este ?
+//TODO dat kratky popis na timeline a desc do detailu
+
+
 angular.module('portfolio.factoryProjects', [])
   .factory('ProjectsFactory', function () {
     var imagesProjectsDir = 'img/project-photos/';

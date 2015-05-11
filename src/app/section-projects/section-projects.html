@@ -8,12 +8,19 @@
     </div>
   </div>
 
-  <div id="projects-modal-window">
+  <div id="projects-modal-window" class="text-gradient">
+    <a class="close-modal">
+      <img src="img/codyhouse-timeline/cd-icon-close.svg"
+           ng-click="onGalleryClose($event)">
+    </a>
+
     <h1>{{selectedProject.title}}</h1>
 
     <p>{{selectedProject.desc}}</p>
 
-    <button ng-click="onGalleryClose()">Close</button>
+    <img ng-repeat="i in selectedProject.images" ng-src="{{i}}" alt=""/>
+
+
   </div>
 
   <div id="cd-timeline" class="cd-container">
