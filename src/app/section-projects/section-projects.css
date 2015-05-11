@@ -1,4 +1,5 @@
-.cd-bouncy-nav-modal {
+#projects-modal-window {
+  visibility: hidden;
   position: fixed;
   z-index: 2030;
   top: 0;
@@ -11,26 +12,4 @@
   -webkit-transition: opacity 0.1s 0s, visibility 0s 0s;
   -moz-transition: opacity 0.1s 0s, visibility 0s 0s;
   transition: opacity 0.1s 0s, visibility 0s 0s;
-}
-
-.cd-bouncy-nav-modal .cd-close {
-  display: block;
-  position: fixed;
-  top: 20px;
-  right: 5%;
-  width: 44px;
-  height: 44px;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: url("img/codyhouse-timeline/cd-icon-location.svg") no-repeat center center;
-  -webkit-transform: scale(0) translateZ(0);
-  -moz-transform: scale(0) translateZ(0);
-  -ms-transform: scale(0) translateZ(0);
-  -o-transform: scale(0) translateZ(0);
-  transform: scale(0) translateZ(0);
-  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s;
-  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s;
-  transition: transform 0.3s 0s, visibility 0s 0.3s;
 }

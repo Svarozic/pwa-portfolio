@@ -8,18 +8,15 @@
     </div>
   </div>
 
-  <div class="cd-bouncy-nav-modal" ng-show="selectedProject!==null">
+  <div id="projects-modal-window">
     <h1>{{selectedProject.title}}</h1>
 
     <p>{{selectedProject.desc}}</p>
 
-
-    <span class="cd-close">Close modal</span>
-
-    <button ng-click="selectedProject = null">Close</button>
+    <button ng-click="onGalleryClose()">Close</button>
   </div>
 
   <div id="cd-timeline" class="cd-container">
-    <cd-timeline ng-repeat="p in projects" project="p" on-gallery-click="onGalleryClick"></cd-timeline>
+    <cd-timeline ng-repeat="p in projects" project="p" on-gallery-click="onGalleryOpen"></cd-timeline>
   </div>
 </div>
