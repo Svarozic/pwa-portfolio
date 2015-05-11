@@ -11,15 +11,15 @@ angular.module('portfolio.sectionProjects')
     $scope.onGalleryClick = function (project) {
       $scope.selectedProject = project;
 
-      var dialog = ngDialog.open({
-        plain: true,
-        template: '<project-detail></project-detail>',
-        scope: $scope
-      });
-
-      //po zatvorenie promise ze clear selected
-      dialog.closePromise.then(function () {
-        $scope.selectedProject = null;
-      });
+      //var dialog = ngDialog.open({
+      //  plain: true,
+      //  template: '<project-detail></project-detail>',
+      //  scope: $scope
+      //});
+      //
+      ////po zatvorenie promise ze clear selected
+      //dialog.closePromise.then(function () {
+      //  $scope.selectedProject = null;
+      //});
     };
   });
