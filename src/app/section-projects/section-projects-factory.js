@@ -1,7 +1,5 @@
 'use strict';
 
-//TODO dat desc ako html a pouzivat v nom linky ako adresy
-
 angular.module('portfolio.factoryProjects', [])
   .factory('ProjectsFactory', function () {
 
@@ -106,7 +104,12 @@ angular.module('portfolio.factoryProjects', [])
         short: 'Android native application',
         time: '2013',
         images: [
-          imagesProjectsDir + tokens[5] + '/5.png'
+          imagesProjectsDir + tokens[5] + '/1.png',
+          imagesProjectsDir + tokens[5] + '/2.png',
+          imagesProjectsDir + tokens[5] + '/3.png',
+          imagesProjectsDir + tokens[5] + '/4.png',
+          imagesProjectsDir + tokens[5] + '/5.png',
+          imagesProjectsDir + tokens[5] + '/6.png'
         ],
         link: 'https://play.google.com/store/apps/details?id=sk.gryfonnlair.priznaj',
         desc: 'Android client for web student portal www.priznaj.sk. Published on Google Play as \'Priznaj.sk\'. It was ' +
@@ -122,7 +125,8 @@ angular.module('portfolio.factoryProjects', [])
         short: 'Android native application',
         time: '2014',
         images: [
-          imagesProjectsDir + tokens[6] + '/5.png'
+          imagesProjectsDir + tokens[6] + '/1.png',
+          imagesProjectsDir + tokens[6] + '/2.png'
         ],
         desc: 'Android application made to order. Camera application for doorman to make evidence of incoming and outgoing ' +
         'vehicles by photos, that are sent to server also with thumbnails history. The whole project consists of PHP server ' +
@@ -135,6 +139,10 @@ angular.module('portfolio.factoryProjects', [])
         short: 'GWT web application',
         time: '2013-2014',
         images: [
+          imagesProjectsDir + tokens[7] + '/1.png',
+          imagesProjectsDir + tokens[7] + '/2.png',
+          imagesProjectsDir + tokens[7] + '/3.png',
+          imagesProjectsDir + tokens[7] + '/4.png',
           imagesProjectsDir + tokens[7] + '/5.png'
         ],
         desc: 'Web application for database administration, supposed to be school learning tool for SQL. Application is ' +
@@ -152,7 +160,7 @@ angular.module('portfolio.factoryProjects', [])
         short: 'AngularJS application',
         time: '2014',
         images: [
-          imagesProjectsDir + tokens[8] + '/5.png'
+          imagesProjectsDir + tokens[8] + '/1.png'
         ],
         desc: 'AngularJS single page application that represents washing machine. Tool to sort clothes for washing machine, ' +
         'navigation and sorting by keyboard shortcuts, result of sorting is send to e-mail. When I started to learn ' +
@@ -166,6 +174,7 @@ angular.module('portfolio.factoryProjects', [])
         short: 'Java, NodeJS, BackboneJS, AngularJS developer',
         time: '2014',
         innerLink: '#experience-erni',
+        //TODO
         desc: ''
       },
 
@@ -173,7 +182,10 @@ angular.module('portfolio.factoryProjects', [])
         token: tokens[10],
         title: 'IT portfolio',
         short: 'AngularJS and Bootstrap single page application',
-        time: '2015'
+        time: '2015',
+        images: [
+          imagesProjectsDir + tokens[10] + '/1.png'
+        ]
       }
     ];
   });

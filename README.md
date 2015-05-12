@@ -6,6 +6,10 @@ IT-portfolio
 ## Specialitky
 
 
+#### Mensie obrazky
+
+[TinyPng](https://tinypng.com/)
+
 #### JsHint global premmenna
 
 ```

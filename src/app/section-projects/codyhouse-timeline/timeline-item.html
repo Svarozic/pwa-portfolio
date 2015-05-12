@@ -11,7 +11,7 @@
     <p>{{project.short}}</p>
 
     <div class="cd-timeline-btns">
-      <a class="cd-timeline-gallery cd-blue" title="screenshots"
+      <a ng-if="project.images" class="cd-timeline-gallery cd-blue" title="screenshots"
          waypoint-animation data-hover-animation="pulse">
         <img src="img/codyhouse-timeline/cd-icon-gallery.svg"
              ng-click="onGalleryClick(project)">
