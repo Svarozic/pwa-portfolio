@@ -33,8 +33,7 @@ angular.module('portfolio.factoryProjects', [])
           imagesProjectsDir + tokens[0] + '/1.png',
           imagesProjectsDir + tokens[0] + '/2.png',
           imagesProjectsDir + tokens[0] + '/3.png',
-          imagesProjectsDir + tokens[0] + '/4.png',
-          imagesProjectsDir + tokens[0] + '/5.png'
+          imagesProjectsDir + tokens[0] + '/4.png'
         ],
         link: 'https://www.youtube.com/watch?v=Xjyhh-8bzRo',
         desc: 'Special chosen way of school semester project for subject ‘Computer Graphic’. Remake of popular SEGA game Battle City in C# with XNA framework.'
@@ -46,7 +45,9 @@ angular.module('portfolio.factoryProjects', [])
         short: 'Imagine Cup by Microsoft, Game Design: Phone',
         time: '2011-2012',
         images: [
-          imagesProjectsDir + tokens[1] + '/5.png'
+          imagesProjectsDir + tokens[1] + '/1.png',
+          imagesProjectsDir + tokens[1] + '/2.png',
+          imagesProjectsDir + tokens[1] + '/3.png'
         ],
         link: 'https://www.youtube.com/watch?v=Neug7oGzWNw',
         desc: 'Participant in Imagine Cup by Microsoft, category Game Design: Phone. Team consisted of four people ' +
@@ -61,13 +62,17 @@ angular.module('portfolio.factoryProjects', [])
         short: 'Vaadin application + android to setup diet plan',
         time: '2012',
         images: [
+          imagesProjectsDir + tokens[2] + '/1.png',
+          imagesProjectsDir + tokens[2] + '/2.png',
+          imagesProjectsDir + tokens[2] + '/3.png',
+          imagesProjectsDir + tokens[2] + '/4.png',
           imagesProjectsDir + tokens[2] + '/5.png'
         ],
         desc: 'Semester project for school subject \'Web Technologies\',  Consists of android mobile client and Java Web application written in Vaadin 6 ' +
         'framework with Hibernate, MySQL, REST communication. It helps users to create their own diet plan, manage his ' +
         'ingredients, foods and food day plans, then sets up his calendar with this day plans. Mobile Android client ' +
         'downloads user plans, synchronizes data and sets up alarms for next food to eat. Also user can collect ingredients ' +
-        'with camera of mobile and input his daily weights and send all of these to server.',
+        'with camera of mobile and input his daily weights and send all of these to server.'
       },
 
       {
@@ -76,7 +81,8 @@ angular.module('portfolio.factoryProjects', [])
         short: 'Vaadin calendar application for one-day clinic',
         time: '2013',
         images: [
-          imagesProjectsDir + tokens[3] + '/5.png'
+          imagesProjectsDir + tokens[3] + '/1.png',
+          imagesProjectsDir + tokens[3] + '/2.png'
         ],
         desc: 'Semester project for school subject \'Building Technologies of Software Development\'. Web application for ' +
         'overnight hospital ward (one-day clinic), written with same technologies like PowerFood project. School subject was more oriented ' +
