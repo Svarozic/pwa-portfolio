@@ -108,8 +108,13 @@ Main components
   margin-top: -12px;
 }
 
-.cd-timeline-gallery {
+.cd-timeline-btns {
   display: block;
+  text-align: start;
+}
+
+.cd-timeline-gallery {
+  display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -122,6 +127,22 @@ Main components
   position: relative;
   top: 7px;
   left: 7px;
+}
+
+.cd-timeline-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.cd-timeline-link img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: relative;
+  top: 12px;
+  left: 12px;
 }
 
 .cd-blue {
@@ -152,7 +173,7 @@ Main components
     border: 5px solid #5091da;
   }
 
-  .cd-timeline-gallery {
+  .cd-timeline-btns {
     display: inline-block;
   }
 }

@@ -11,11 +11,21 @@
     <p>{{project.desc}}</p>
     <!--TODO scrollTo hore alebo inde-->
 
-    <span class="cd-timeline-gallery cd-blue"
-          waypoint-animation data-hover-animation="pulse">
-      <img src="img/codyhouse-timeline/cd-icon-gallery.svg"
-           ng-click="onGalleryClick(project)">
-    </span>
+    <div class="cd-timeline-btns">
+      <a class="cd-timeline-gallery cd-blue" title="screenshots"
+         waypoint-animation data-hover-animation="pulse">
+        <img src="img/codyhouse-timeline/cd-icon-gallery.svg"
+             ng-click="onGalleryClick(project)">
+      </a>
+
+      <a ng-if="project.link" ng-href="{{project.link}}" target="_blank"
+         class="cd-timeline-link cd-blue" title="link"
+         waypoint-animation data-hover-animation="pulse">
+        <img src="img/codyhouse-timeline/cd-icon-link.svg"
+             ng-click="">
+      </a>
+    </div>
+    <!--.cd-timeline-btns-->
 
     <span class="cd-date">{{project.time}}</span>
   </div>
