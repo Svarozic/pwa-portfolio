@@ -2,6 +2,11 @@
 
 angular.module('portfolio.factorySkills', [])
   .factory('SkillFactory', function () {
+
+    //len tie ktore su na obrazok a treba ratat s reposnive riadkami inaksie
+
+    //Apache web server - erni na appky
+
     return [
       {src: 'adobeillustrator.png', title: 'Adobe Illustrator CS6'},
       {src: 'android.png', title: 'Android'},

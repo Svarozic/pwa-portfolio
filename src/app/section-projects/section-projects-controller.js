@@ -18,8 +18,6 @@ angular.module('portfolio.sectionProjects')
       enableScroll(false);
     };
 
-
-    //TODO mobil dava event dalej na va bar
     $scope.onGalleryClose = function (e) {
       e.stopPropagation();
       e.preventDefault();

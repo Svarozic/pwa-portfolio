@@ -92,10 +92,7 @@ angular.module('portfolio.factoryProjects', [])
         title: 'MWay: Junior Java developer',
         short: 'OSGi GWT web application developer',
         time: '2012-2013',
-        innerLink: '#experience-mway',
-        //TODO
-        desc: ''
-
+        innerLink: '#experience-mway'
       },
 
       {
@@ -173,9 +170,7 @@ angular.module('portfolio.factoryProjects', [])
         title: 'ERNI: Junior Software Engineer',
         short: 'Java, NodeJS, BackboneJS, AngularJS developer',
         time: '2014',
-        innerLink: '#experience-erni',
-        //TODO
-        desc: ''
+        innerLink: '#experience-erni'
       },
 
       {
