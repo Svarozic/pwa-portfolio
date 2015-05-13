@@ -17,9 +17,6 @@ $(window).resize(function () {
     }, 205);
     windowWidth = newWindowWidth;
   }
-
-  //TODO centrovat mapu po resize
-  map();
 });
 
 /* =========================================
