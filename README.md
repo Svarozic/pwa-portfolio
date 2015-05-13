@@ -33,3 +33,7 @@ cez $scope si tento event chytam
 scroll-to-directive.js ako komponent, je to attr direktiva s moznym delayom, je nutne mat 3rd kniznice aby fungovala. 
 JQuery kod aplikuje na element v *link* funckii, ked je uz JQuery inicializovany
 
+
+#### Efekt vnutorne zvacsovanie obrazky
+section experiencies
+
