@@ -47,6 +47,10 @@ FOOTER
   background-color: #4a7f45;
 }
 
+#footer p.social a.pdf {
+  background-color: #d71e00;
+}
+
 @media (max-width: 767px) {
   #footer p.social {
     text-align: center;
