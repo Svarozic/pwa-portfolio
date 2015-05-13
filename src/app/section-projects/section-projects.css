@@ -11,6 +11,20 @@
   padding-top: 15px;
 }
 
+#projects-modal-window h2 {
+  /*copy from template*/
+  display: inline-block;
+  font-size: 50px;
+  font-weight: 100;
+  padding: 10px 0;
+  margin-bottom: 44px;
+  text-align: center;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
 #projects-modal-window img {
   max-width: 100%;
   display: block;
@@ -23,9 +37,9 @@
   height: 40px;
 }
 
-
 @media only screen and (min-width: 1170px) {
   #projects-modal-window .close-modal {
+    display: block;
     position: fixed;
     top: 20px;
     right: 20px;
