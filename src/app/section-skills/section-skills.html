@@ -8,11 +8,10 @@
     <!--.row title-->
 
     <div class="row" waypoint-animation data-animation="fadeIn">
-      <div class="icon col-xs-offset-1 col-xs-1 col-md-offset-2 col-md-1"><i class="fa fa-search"></i></div>
-
-      <div class="col-xs-9 col-md-7">
-        <md-input-container md-no-float>
-          <input ng-model="filterText" type="text" placeholder="What you are looking for ...">
+      <div class=" col-xs-offset-1 col-xs-9 col-md-offset-2 col-md-8">
+        <md-input-container flex>
+          <label><i class="glyphicon glyphicon-search"></i> &nbsp; What you are looking for ...</label>
+          <input ng-model="filterText">
         </md-input-container>
       </div>
     </div>
