@@ -180,7 +180,10 @@ angular.module('portfolio.factoryProjects', [])
         time: '2015',
         images: [
           imagesProjectsDir + tokens[10] + '/1.png'
-        ]
+        ],
+        desc: 'Personal web page that represents my Curriculum Vitae. As a basis I used bootstrapious free template, ' +
+        'but I restructured it with AngularJS, added some external javascript libraries for specific features and fixed ' +
+        'some bugs. For development I also used the yeoman generator that help me with boilerplate code in some gulp jobs.'
       }
     ];
   });
