@@ -5,6 +5,22 @@ IT-portfolio
 
 ## Specialitky
 
+#### HTTP server
+http server si spustam cez [http-server](https://www.npmjs.com/package/http-server) package s tym ze mu davam home dir 
+s vykompilovanym kodom
+
+```
+node node_modules/http-server/bin/http-server ./dist/ -a localhost
+```
+
+ale ak ho chcem pustat na osobitnom processe tak pouzijem [forever](https://www.npmjs.com/package/forever)
+
+```
+node_modules/forever/bin/forever start -p . -v -l server.log ./node_modules/http-server/bin/http-server ./dist/ -a localhost
+```
+
+napisany mam na to krasny BASH skript **start.sh**
+
 
 #### Mensie obrazky
 
