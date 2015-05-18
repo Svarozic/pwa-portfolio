@@ -32,3 +32,8 @@ ${cmdForever} stop "it-portfolio"
 # -p  PATH         Base path for all forever related files (pid files, etc.)
 # -l  LOGFILE      Logs the forever output to LOGFILE
 ${cmdForever} start --uid "it-portfolio" -v -p . -l ${fileName} ${cmdHttpServer} ./dist/ -a localhost -p 8080
+
+#Prikaz na ukoncenie servera pre istotu -e na \n char
+echo -e "Ukoncenie Servera pomocou prikazu: \n"
+echo -e "${cmdForever} stop it-portfolio \n"
+
