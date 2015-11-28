@@ -5,6 +5,34 @@ IT-portfolio
 
 ## Specialitky
 
+#### Deploy na firebase
+
+```
+npm install -g firebase-tools
+```
+
+Prepnem sa do usera a lognem sa
+
+```
+firebase login
+```
+
+Vybuildujem projekt ale dam ho do sub priecinka pretoze firebase ocakava node applikcaiu a preto musim zadat public 
+priecinok. Struktura it-portfolio/public a v it-portofliu zadam prikazi. Treba este v index.html nastavit protokol 
+na tahanie fontu na https, pretoze firebase ma taky hostin a nemozem mixovat requesty na stranke.
+
+
+```
+firebase init
+```
+
+```
+firebase deploy
+```
+
+zbytocne prazdne foldre app / components / js / css
+
+
 #### HTTP server
 http server si spustam cez [http-server](https://www.npmjs.com/package/http-server) package s tym ze mu davam home dir 
 s vykompilovanym kodom
