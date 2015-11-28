@@ -43,3 +43,13 @@
   font-size: 15px;
   text-align: justify;
 }
+
+.experiences a {
+  color: white;
+  text-decoration: underline;
+}
+
+.experiences a:hover {
+  color: white;
+  font-weight: 700;
+}
