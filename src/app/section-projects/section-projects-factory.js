@@ -18,7 +18,8 @@ angular.module('portfolio.factoryProjects', [])
       'master-diploma-thesis',
       'pradelnicek',
       'erni',
-      'it-portfolio'
+      'it-portfolio',
+      'agfa'
     ];
 
     return [
@@ -184,6 +185,29 @@ angular.module('portfolio.factoryProjects', [])
         desc: 'Personal web page that represents my Curriculum Vitae. As a basis I used bootstrapious free template, ' +
         'but I restructured it with AngularJS, added some external javascript libraries for specific features and fixed ' +
         'some bugs. For development I also used the yeoman generator that help me with boilerplate code in some gulp jobs.'
+      },
+
+      {
+        token: tokens[11],
+        title: 'AGFA: Software Developer',
+        short: 'Java, Java EE, OSGi, GWT',
+        time: '2015',
+        innerLink: '#experience-agfa'
+      },
+
+      {
+        token: tokens[11],
+        title: 'URL Generator',
+        short: 'AngularJS application, built as SPA or Chrome extension',
+        time: '2015',
+        images: [
+          imagesProjectsDir + tokens[11] + '/1.png',
+          imagesProjectsDir + tokens[11] + '/2.png'
+        ],
+        desc: 'Internal tool to generate URL link as entry point for internal web application. Built with AngularJS, used custom' +
+        ' Gulp configuration to built two distribution versions of app, one as single page application and second as chrome extension ' +
+        'with optimized layout. App uses browser local storage to remember last used parameters and presents URL link ' +
+        'in more variations according to form selected values. Produce also QR code start links easily from mobile devices.'
       }
     ];
   });
