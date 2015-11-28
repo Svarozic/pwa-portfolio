@@ -62,8 +62,8 @@ function fullScreenContainer() {
 function map() {
 
   var mapPosition = {
-    lat: 48.11150,
-    lng: 17.11251
+    lat: 48.2173758,
+    lng: 16.3746606
   };
 
   var styles = [
