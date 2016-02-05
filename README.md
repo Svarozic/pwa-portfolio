@@ -1,5 +1,7 @@
 # IT-portfolio
 
+[firebase demo](https://it-portfolio.firebaseapp.com/)
+
 ![Preview image](/preview.png?raw=true "Preview image")
 
 ## Specialitky
