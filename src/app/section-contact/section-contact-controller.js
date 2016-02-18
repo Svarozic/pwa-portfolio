@@ -37,6 +37,23 @@ angular.module('portfolio.sectionContact')
     };
 
     /**
+     * Vycisti scope premenne pre formular
+     */
+    function clearContactForm() {
+      $scope.contact = {
+        firstName: undefined,
+        firstNameError: false,
+        lastName: undefined,
+        lastNameError: false,
+        email: undefined,
+        emailError: false,
+        phone: undefined,
+        text: undefined,
+        textError: false
+      };
+    }
+
+    /**
      * Posielanie mail cez madrill
      * https://mandrillapp.com/api/docs/messages.JSON.html#method=send
      */
@@ -83,21 +100,4 @@ angular.module('portfolio.sectionContact')
         }, portfolioSectionContactWobbleTime);
       }
     };
-
-    /**
-     * Vycisti scope premenne pre formular
-     */
-    function clearContactForm() {
-      $scope.contact = {
-        firstName: undefined,
-        firstNameError: false,
-        lastName: undefined,
-        lastNameError: false,
-        email: undefined,
-        emailError: false,
-        phone: undefined,
-        text: undefined,
-        textError: false
-      };
-    }
   });

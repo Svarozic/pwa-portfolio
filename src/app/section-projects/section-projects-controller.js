@@ -11,6 +11,10 @@ angular.module('portfolio.sectionProjects')
     //nakliknuta galeria pre projekt
     $scope.selectedProject = null;
 
+    function enableScroll(flag) {
+      $('body').css('overflow', flag ? 'auto' : 'hidden');
+    }
+
     $scope.onGalleryOpen = function (project) {
       $scope.selectedProject = project;
       var modal = $('#projects-modal-window');
@@ -26,8 +30,4 @@ angular.module('portfolio.sectionProjects')
       enableScroll(true);
       $scope.selectedProject = null;
     };
-
-    function enableScroll(flag) {
-      $('body').css('overflow', flag ? 'auto' : 'hidden');
-    }
   });
