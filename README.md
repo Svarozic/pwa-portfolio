@@ -12,15 +12,19 @@
 npm install -g firebase-tools
 ```
 
-Prepnem sa do usera a lognem sa
+- Prepnem sa do usera a lognem sa
 
 ```
 firebase login
 ```
 
-Vybuildujem projekt ale dam ho do sub priecinka pretoze firebase ocakava node applikcaiu a preto musim zadat public 
-priecinok. Struktura it-portfolio/public a v it-portofliu zadam prikazi. Treba este v index.html nastavit protokol 
-na tahanie fontu na https, pretoze firebase ma taky hostin a nemozem mixovat requesty na stranke.
+- Vybuildujem projekt ale dam ho do sub priecinka pretoze firebase ocakava node applikcaiu a preto musim zadat public 
+priecinok.
+- Zmazat zbytocne prazdne foldre app / components / js / css
+- Treba este v index.html nastavit protokol na tahanie google api fontu na https, pretoze firebase ma taky hosting a 
+nemozem 
+mixovat requesty na stranke.
+- Struktura ROOT/public a v ROOT zadam prikazi.
 
 
 ```
@@ -31,7 +35,6 @@ firebase init
 firebase deploy
 ```
 
-zbytocne prazdne foldre app / components / js / css
 
 
 #### HTTP server
