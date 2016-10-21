@@ -5,7 +5,9 @@ angular.module('portfolio.factorySkills', [])
 
     // trba pridavat po 5, lebo 5 alebo 10 je responsive design
     //len tie ktore su na obrazok a treba ratat s reposnive riadkami inaksie
-    //TODO WebSockets, redux
+    //TODO WebSockets, redux, angular2
+    //TODO medzi projekty pridat linky na Github
+    //TODO disablenute priznaj.sk play google treba redeploy app s novym screenom 7 v priznaj projekte
 
     return [
       {src: 'adobeillustrator.png', title: 'Adobe Illustrator CS6'},

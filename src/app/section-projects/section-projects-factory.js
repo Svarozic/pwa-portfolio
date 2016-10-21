@@ -107,7 +107,8 @@ angular.module('portfolio.factoryProjects', [])
           imagesProjectsDir + tokens[5] + '/3.png',
           imagesProjectsDir + tokens[5] + '/4.png',
           imagesProjectsDir + tokens[5] + '/5.png',
-          imagesProjectsDir + tokens[5] + '/6.png'
+          imagesProjectsDir + tokens[5] + '/6.png',
+          imagesProjectsDir + tokens[5] + '/7.png'
         ],
         link: 'https://play.google.com/store/apps/details?id=sk.gryfonnlair.priznaj',
         desc: 'Android client for web student portal www.priznaj.sk. Published on Google Play as \'Priznaj.sk\'. It was ' +
