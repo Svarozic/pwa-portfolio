@@ -10,7 +10,6 @@ angular.module('portfolio.sectionSkills')
     }, $scope.skills);
 
     $scope.getSelectedClassName = function (skillName) {
-      return skillName.toLowerCase().indexOf($scope.filterText.toLowerCase()) != -1
-        ? 'label-primary' : 'not-selected';
-    }
+      return skillName.toLowerCase().indexOf($scope.filterText.toLowerCase()) !== -1 ? 'label-primary' : 'not-selected';
+    };
   });
