@@ -205,7 +205,7 @@ angular.module('portfolio.factoryProjects', [])
         token: tokens[11],
         title: 'Comoto',
         short: 'Sample of AngularJS application, built as SPA or Chrome extension',
-        time: '2015',
+        time: '2016',
         images: [
           imagesProjectsDir + tokens[11] + '/1.png',
           imagesProjectsDir + tokens[11] + '/2.png'
