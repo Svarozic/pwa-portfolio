@@ -20,10 +20,9 @@
 
     <div class="row skill-list" waypoint-animation data-animation="fadeInUp">
       <div class="col-md-offset-2 col-md-8">
-        <span class="label label-primary animated-skill"
-              ng-repeat="s in skills | filter:filterText | orderBy">
-        {{s}}
-        </span>
+        <span ng-repeat="s in skills | orderBy"
+              ng-class="getSelectedClassName(s)"
+              class="label">{{s}}</span>
       </div>
     </div>
     <!--.row skilllist-->
