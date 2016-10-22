@@ -13,23 +13,26 @@
     <div class="cd-timeline-btns">
       <a ng-if="project.images" class="cd-timeline-gallery cd-blue" title="screenshots"
          waypoint-animation data-hover-animation="pulse">
-        <img src="img/codyhouse-timeline/cd-icon-gallery.svg"
-             ng-click="onGalleryClick(project)">
+        <img src="img/codyhouse-timeline/cd-icon-gallery.svg" ng-click="onGalleryClick(project)">
+      </a>
+
+      <a ng-if="project.github" ng-href="{{project.github}}" target="_blank"
+         class="cd-timeline-link cd-blue" title="github"
+         waypoint-animation data-hover-animation="pulse">
+        <img src="img/codyhouse-timeline/cd-icon-github.svg" ng-click="">
       </a>
 
       <a ng-if="project.link" ng-href="{{project.link}}" target="_blank"
          class="cd-timeline-link cd-blue" title="link"
          waypoint-animation data-hover-animation="pulse">
-        <img src="img/codyhouse-timeline/cd-icon-link.svg"
-             ng-click="">
+        <img src="img/codyhouse-timeline/cd-icon-link.svg" ng-click="">
       </a>
 
       <a ng-if="project.innerLink" ng-href="{{project.innerLink}}"
          scroll-to="{{project.innerLink}}"
          class="cd-timeline-link cd-blue" title="link"
          waypoint-animation data-hover-animation="pulse">
-        <img src="img/codyhouse-timeline/cd-icon-link.svg"
-             ng-click="">
+        <img src="img/codyhouse-timeline/cd-icon-link.svg" ng-click="">
       </a>
 
     </div>

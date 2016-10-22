@@ -111,11 +111,13 @@ angular.module('portfolio.factoryProjects', [])
           imagesProjectsDir + tokens[5] + '/7.png'
         ],
         link: 'https://play.google.com/store/apps/details?id=sk.gryfonnlair.priznaj',
+        github: 'https://github.com/GryfonN/Priznaj.sk',
         desc: 'Android client for web student portal www.priznaj.sk. Published on Google Play as \'Priznaj.sk\'. It was ' +
         'created from my own initiative to improve my android skills, that I have learned during the summer holidays 2013. ' +
         'I have also learned basic of PHP, because I had to implement REST services in PHP on server side to allowed ' +
         'communication with server database. Offline functionality, data synchronization, SQLite database, Android Design ' +
-        'Patterns, Tablet optimalization.'
+        'Patterns, Tablet optimalization. Application was unpublished by me from play google, because web portal was sold ' +
+        'to different owner that did not want to cooperate anymore with me.'
       },
 
       {
@@ -144,6 +146,7 @@ angular.module('portfolio.factoryProjects', [])
           imagesProjectsDir + tokens[7] + '/4.png',
           imagesProjectsDir + tokens[7] + '/5.png'
         ],
+        github: 'https://github.com/GryfonN/Database-Mentor',
         desc: 'Web application for database administration, supposed to be school learning tool for SQL. Application is ' +
         'written with GWT framework, can connect by default to server’s MySQL database and reads meta information about ' +
         'stored functions and procedures, creates and executes them also executes SQL statements with some debug option. ' +
@@ -161,6 +164,7 @@ angular.module('portfolio.factoryProjects', [])
         images: [
           imagesProjectsDir + tokens[8] + '/1.png'
         ],
+        github: 'https://github.com/GryfonN/Pradelnicek',
         desc: 'AngularJS single page application that represents washing machine. Tool to sort clothes for washing machine, ' +
         'navigation and sorting by keyboard shortcuts, result of sorting is send to e-mail. When I started to learn ' +
         'front-end technologies I wanted to test them on some project, but the real reason was that clothes washing was ' +
@@ -183,6 +187,7 @@ angular.module('portfolio.factoryProjects', [])
         images: [
           imagesProjectsDir + tokens[10] + '/1.png'
         ],
+        github: 'https://github.com/GryfonN/IT-portfolio',
         desc: 'Personal web page that represents my Curriculum Vitae. As a basis I used bootstrapious free template, ' +
         'but I restructured it with AngularJS, added some external javascript libraries for specific features and fixed ' +
         'some bugs. For development I also used the yeoman generator that help me with boilerplate code in some gulp jobs.'
@@ -198,15 +203,16 @@ angular.module('portfolio.factoryProjects', [])
 
       {
         token: tokens[11],
-        title: 'URL Generator',
-        short: 'AngularJS application, built as SPA or Chrome extension',
+        title: 'Comoto',
+        short: 'Sample of AngularJS application, built as SPA or Chrome extension',
         time: '2015',
         images: [
           imagesProjectsDir + tokens[11] + '/1.png',
           imagesProjectsDir + tokens[11] + '/2.png'
         ],
-        desc: 'Internal tool to generate URL link as entry point for internal web application. Built with AngularJS, used custom' +
-        ' Gulp configuration to built two distribution versions of app, one as single page application and second as chrome extension ' +
+        github: 'https://github.com/GryfonN/Comoto-Sample',
+        desc: 'My agfa internal tool to generate URL link as entry point for internal web application. Built with AngularJS, used custom ' +
+        'Gulp configuration to built two distribution versions of app, one as single page application and second as chrome extension ' +
         'with optimized layout. App uses browser local storage to remember last used parameters and presents URL link ' +
         'in more variations according to form selected values. Produce also QR code start links easily from mobile devices.'
       }
