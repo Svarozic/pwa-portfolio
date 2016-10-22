@@ -12,28 +12,18 @@
 npm install -g firebase-tools
 ```
 
-- Prepnem sa do usera a lognem sa
+- Vybuildujem projekt `gulp build`
+- Vytvorim public priecinon pre firebase tool `cd dist && mkdir public` 
+- Zmazat zbytocne prazdne priecinky `rm -rf app components js css`
+- Treba este v index.html nastavit protokol na tahanie google api fontu na **https** , pretoze firebase ma taky hosting a nemozem mixovat requesty na stranke.
+    - hladat *fonts.googleapis.com*
+- Presuniem vsetko do public
+- Struktura /DIST/public a v DIST zadam prikazi.
 
-```
-firebase login
-```
-
-- Vybuildujem projekt ale dam ho do sub priecinka pretoze firebase ocakava node applikcaiu a preto musim zadat public 
-priecinok.
-- Zmazat zbytocne prazdne foldre app / components / js / css
-- Treba este v index.html nastavit protokol na tahanie google api fontu na https, pretoze firebase ma taky hosting a 
-nemozem 
-mixovat requesty na stranke.
-- Struktura ROOT/public a v ROOT zadam prikazi.
-
-
-```
-firebase init
-```
-
-```
-firebase deploy
-```
+`firebase login`
+`firebase list`
+`firebase init` - mal by som vsetko odenterovat
+`firebase deploy`
 
 
 
