@@ -19,7 +19,8 @@ angular.module('portfolio.factoryProjects', [])
       'pradelnicek',
       'erni',
       'it-portfolio',
-      'agfa'
+      'agfa',
+      'comoto'
     ];
 
     return [
@@ -202,13 +203,13 @@ angular.module('portfolio.factoryProjects', [])
       },
 
       {
-        token: tokens[11],
+        token: tokens[12],
         title: 'Comoto',
         short: 'Sample of AngularJS application, built as SPA or Chrome extension',
         time: '2016',
         images: [
-          imagesProjectsDir + tokens[11] + '/1.png',
-          imagesProjectsDir + tokens[11] + '/2.png'
+          'https://raw.githubusercontent.com/GryfonN/Comoto-Sample/master/github-preview-images/comoto-browser.PNG',
+          'https://raw.githubusercontent.com/GryfonN/Comoto-Sample/master/github-preview-images/comoto-ext.PNG'
         ],
         github: 'https://github.com/GryfonN/Comoto-Sample',
         desc: 'My agfa internal tool to generate URL link as entry point for internal web application. Built with AngularJS, used custom ' +
