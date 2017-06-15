@@ -5,11 +5,14 @@ import './ceevee-static/css/magnific-popup.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection';
+import PortfolioSection from './components/PortfolioSection/PortfolioSection';
 import registerServiceWorker from './registerServiceWorker';
 import initCeeVee from './initCeeVee';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<PlaygroundSection />, document.getElementById('playground'));
+ReactDOM.render(<PortfolioSection />, document.getElementById('portfolio'));
+
 registerServiceWorker();
 
 initCeeVee();
