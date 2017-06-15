@@ -17,6 +17,6 @@
     "test"        : "react-scripts test --env=jsdom",
     "eject"       : "react-scripts eject",
     "start:build" : "http-server build",
-    "build:deploy": "react-scripts build && mv build/service-worker.js build/service-worker_ORIGINAL.js && sw-precache --config=sw-precache-config.js --verbose"
+    "build:deploy": "react-scripts build && mv build/service-worker.js build/service-worker_ORIGINAL.js && sw-precache --config=sw-precache-ceevee-config.js --verbose"
   }
 }
