@@ -1,18 +1,22 @@
 {
-  "name": "pwa-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^15.5.4",
+  "name"           : "pwa-portfolio",
+  "version"        : "0.1.0",
+  "private"        : true,
+  "dependencies"   : {
+    "react"    : "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "http-server"  : "^0.10.0",
+    "react-scripts": "1.0.7",
+    "sw-precache"  : "^5.2.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "scripts"        : {
+    "start"       : "react-scripts start",
+    "build"       : "react-scripts build",
+    "test"        : "react-scripts test --env=jsdom",
+    "eject"       : "react-scripts eject",
+    "start:build" : "http-server build",
+    "build:deploy": "react-scripts build && mv build/service-worker.js build/service-worker_ORIGINAL.js && sw-precache --config=sw-precache-config.js --verbose"
   }
 }

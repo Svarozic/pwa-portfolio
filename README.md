@@ -1,5 +1,12 @@
 # PWA portfolio
 
+## Deployment
+
+> Temporary process to create PWA with CeeVee template resources
+
+- `yarn run build:deploy` - build create-react-app, backup as `service-worker.js`, generates new `service-worker.js` with CeeVee template resource in var `precacheConfig`
+- merge `precacheConfig` var into original created service-worker, delete newone and deploy
+
 # ORIGINAL CREATE-REACT-APP README
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
