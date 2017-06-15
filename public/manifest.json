@@ -1,16 +1,16 @@
 {
-  "short_name": "Ing. Petraník",
-  "name": "Ing. Peter Petraník",
-  "description": "CV of Ing. Peter Petraník as Progresive Web Application",
-  "icons": [
+  "short_name"      : "Ing. Petraník Portfolio",
+  "name"            : "Ing. Peter Petraník Portfolio",
+  "description"     : "Progressive Web Application portfolio of Ing. Peter Petraník",
+  "icons"           : [
     {
-      "src": "favicon.ico",
+      "src"  : "favicon.ico",
       "sizes": "192x192",
-      "type": "image/png"
+      "type" : "image/png"
     }
   ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "theme_color": "#000000",
+  "start_url"       : "./index.html",
+  "display"         : "standalone",
+  "theme_color"     : "#000000",
   "background_color": "#000000"
 }
