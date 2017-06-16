@@ -9,10 +9,12 @@ import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection'
 import PortfolioSection from './components/PortfolioSection/PortfolioSection';
 import registerServiceWorker from './registerServiceWorker';
 import initCeeVee from './initCeeVee';
+import HomeAppendix from './components/HomeSection/HomeAppendix';
 
-ReactDOM.render(<PlaygroundSection />, document.getElementById('playground'));
-ReactDOM.render(<PortfolioSection />, document.getElementById('portfolio'));
+ReactDOM.render(<HomeAppendix/>, document.getElementById('pp-home-appendix'));
+ReactDOM.render(<PlaygroundSection />, document.getElementById('pp-playground-section'));
+ReactDOM.render(<PortfolioSection />, document.getElementById('pp-portfolio-section'));
 
 registerServiceWorker();
 
-initCeeVee();
+// initCeeVee();

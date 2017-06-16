@@ -1,0 +1,1 @@
+export HomeAppendix from './HomeAppendix';
