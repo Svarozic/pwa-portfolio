@@ -63,7 +63,8 @@ export default function () {
         /*	Make sure that #header-background-image height is
          /* equal to the browser height.
          ------------------------------------------------------ */
-
+        //GRYF presunut init script do App onMount
+        //GRYF home section rozdelit na HTML kt bude vidiet hned na zaciatku, a na react NAVIGATION compoennt kt sa naloduje to prazdneho divka v nom
         $('header').css({'height': $(window).height()});
         $(window).on('resize', function () {
 
