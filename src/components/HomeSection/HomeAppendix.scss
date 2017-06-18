@@ -1,8 +1,24 @@
 @import "../../variables";
 
+$size-scrolldown-btn: 64px;
+
 .pp-home-appendix-component {
-  height: 150px; //same as loading placeholder gif
-  padding-top: 50px;
+  height: 170px; //same as loading placeholder gif
+  padding-top: 30px;
+
+  .pp-scrolldown-btn {
+    position: absolute;
+    bottom: $size-scrolldown-btn;
+    width: $size-scrolldown-btn;
+    margin-left: -$size-scrolldown-btn/2;
+    font-size: $size-scrolldown-btn;
+    line-height: $size-scrolldown-btn;
+    text-shadow: 0 2px 6px #000000;
+  }
+
+  ul {
+    width: 75%;
+  }
 
   a {
     color: #ffffff;
