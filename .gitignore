@@ -2,7 +2,11 @@
 
 # Ignore scss outputs
 **/*.css
-# GRYF remove
+# Ignore copied ext JS files from node-modules
+public/ext-js-plugins/jquery.min.js
+public/ext-js-plugins/materialize.js
+
+# GRYF remove ceeve css
 !ceevee-static/**/*.css
 
 .idea

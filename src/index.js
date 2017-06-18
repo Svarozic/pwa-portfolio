@@ -13,8 +13,10 @@ import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection'
 import PortfolioSection from './components/PortfolioSection/PortfolioSection';
 import AboutSection from './components/AboutSection/AboutSection';
 import HomeAppendix from './components/HomeSection/HomeAppendix';
+import NavBar from './components/NavBar/NavBar';
 
 
+ReactDOM.render(<NavBar />, document.getElementById('pp-navbar-container'));
 ReactDOM.render(<HomeAppendix />, document.getElementById('pp-appendix-container'));
 
 ReactDOM.render(<AboutSection />, document.getElementById('pp-about-container'));
