@@ -1,5 +1,67 @@
 @import '../../_variables';
 
 .pp-resume-component {
+  h3 {
+    color: $color-gray-dark;
+  }
+
+  .pp-resume-level {
+    border-bottom: 3px solid $color-green;
+    font: 16px/24px 'Roboto', serif;
+    font-weight: bold;
+    color: $color-gray-dark;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .pp-resume-item {
+    padding-top: 12px;
+
+    h4 {
+      font: 26px/24px 'Roboto', serif;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 8px 0;
+      color: #000000;
+
+      a {
+        color: #000000;
+        i {
+          font-size: 20px;
+        }
+
+        &:hover {
+          color: $color-green;
+        }
+      }
+    }
+
+    p {
+      color: #6E7881;
+      margin: 0;
+    }
+
+    p.pp-info {
+      font: 16px/24px 'librebaskerville-italic', serif;
+      margin-bottom: 12px;
+
+      .pp-date {
+        font: 12px/24px 'librebaskerville-italic', serif;
+      }
+    }
+
+    p.pp-desc {
+      font-family: 'Roboto', serif;
+      font-weight: 300;
+      text-align: justify;
+      font-size: small;
+    }
+  }
+
+  @media only screen and (max-width: $width-device-mobile) {
+    .pp-resume-level {
+      text-align: center;
+    }
+  }
 
 }
