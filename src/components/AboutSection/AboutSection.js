@@ -6,7 +6,8 @@ import photo from './photo.jpg';
 const AboutSection = () => {
     return (
         <div className="pp-about-component">
-            <div className="container"><h3>About</h3>
+            <div className="container">
+                <h3>About</h3>
                 <div className="row">
 
                     <div className="col s12 m4 center-align">

@@ -11,11 +11,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import initExtJsPlugins from './initExtJsPlugins';
-import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection';
-import PortfolioSection from './components/PortfolioSection/PortfolioSection';
-import AboutSection from './components/AboutSection/AboutSection';
-import HomeAppendix from './components/HomeSection/HomeAppendix';
 import NavBar from './components/NavBar/NavBar';
+import HomeAppendix from './components/HomeSection/HomeAppendix';
+import AboutSection from './components/AboutSection/AboutSection';
+import ResumeSection from './components/ResumeSection/ResumeSection';
+import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection';
+import WorksSection from './components/WorksSection/WorksSection';
 import Footer from './components/Footer/Footer';
 
 
@@ -23,7 +24,8 @@ ReactDOM.render(<NavBar />, document.getElementById('pp-navbar-container'));
 ReactDOM.render(<HomeAppendix />, document.getElementById('pp-appendix-container'));
 
 ReactDOM.render(<AboutSection />, document.getElementById('pp-about-container'));
-ReactDOM.render(<PortfolioSection />, document.getElementById('pp-portfolio-container'));
+ReactDOM.render(<ResumeSection />, document.getElementById('pp-resume-container'));
+ReactDOM.render(<WorksSection />, document.getElementById('pp-works-container'));
 ReactDOM.render(<PlaygroundSection />, document.getElementById('pp-playground-container'));
 
 
