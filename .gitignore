@@ -2,6 +2,8 @@
 
 # Ignore scss outputs
 **/*.css
+!src/font-librebaskerville/librebaskerville.css
+
 # Ignore copied ext JS files from node-modules
 public/ext-js-plugins/jquery.min.js
 public/ext-js-plugins/materialize.js

@@ -1,0 +1,26 @@
+@import '../../_variables';
+
+$size-photo: 200px;
+
+.pp-about-component {
+  background: $color-gray-dark;
+  color: $color-gray-light;
+
+  h3 {
+    color: #ffffff;
+  }
+
+  img {
+    width: 100%;
+    max-width: $size-photo;
+    max-height: $size-photo;
+    border-radius: 50%;
+  }
+
+  .pp-description {
+    font-family: 'librebaskerville-italic', serif;
+    text-align: justify;
+    margin: 0 0 20px 0;
+  }
+
+}
