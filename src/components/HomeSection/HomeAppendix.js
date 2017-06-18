@@ -1,9 +1,14 @@
-import React, { Component } from 'react';
+import './HomeAppendix.css';
 
-export default class HomeAppendix extends Component {
-    render() {
-        return (
-            <div className="row">GRYF PlaygroundSection</div>
-        );
-    }
-}
+import React from 'react';
+import SocialLinks from './SocialLinks';
+
+const HomeAppendix = () => {
+    return (
+        <div className="pp-home-appendix-component">
+            <SocialLinks/>
+        </div>
+    );
+};
+
+export default HomeAppendix;

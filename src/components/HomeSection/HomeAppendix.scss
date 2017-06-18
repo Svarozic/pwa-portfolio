@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.pp-home-appendix-component {
+  height: 150px; //same as loading placeholder gif
+  padding-top: 50px;
+
+  a {
+    color: #ffffff;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

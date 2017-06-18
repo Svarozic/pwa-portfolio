@@ -3,12 +3,13 @@
   "version"        : "0.1.0",
   "private"        : true,
   "dependencies"   : {
-    "react"    : "^15.5.4",
-    "react-dom": "^15.5.4"
+    "font-awesome"   : "^4.7.0",
+    "materialize-css": "^0.98.2",
+    "react"          : "^15.5.4",
+    "react-dom"      : "^15.5.4"
   },
   "devDependencies": {
     "http-server"       : "^0.10.0",
-    "materialize-css"   : "^0.98.2",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all"       : "^4.0.2",
     "react-scripts"     : "1.0.7",

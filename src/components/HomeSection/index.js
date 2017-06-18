@@ -1,4 +1,4 @@
 import HomeAppendix from './HomeAppendix';
-import HomeBanner from './HomeBanner';
+import SocialLinks from './SocialLinks';
 
-export { HomeAppendix, HomeBanner };
+export { HomeAppendix, SocialLinks };

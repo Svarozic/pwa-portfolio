@@ -1,5 +1,8 @@
 # PWA portfolio
 
+Progresive Web Application created by [create-react-app](https://github.com/facebookincubator/create-react-app) that represents my personal web portfolio. 
+Built with `nodejs v7.10.0` and `npm v4.2.0`   
+
 ## Deployment
 
 > Temporary process to create PWA with CeeVee template resources
