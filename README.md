@@ -7,8 +7,8 @@ Built with `nodejs v7.10.0` and `npm v4.2.0`
 
 > Temporary process to create PWA with CeeVee template resources
 
-- `yarn run build:deploy` - build create-react-app, backup as `service-worker.js`, generates new `service-worker.js` with CeeVee template resource in var `precacheConfig`
-- merge `precacheConfig` var into original created service-worker, delete newone and deploy
+- `yarn run build:deploy` - builds create-react-app, backups `service-worker.js`, generates new `service-worker.js` with external resource in public.
+- merge `precacheConfig` var into original created service-worker, delete new one and deploy
 
 # ORIGINAL CREATE-REACT-APP README
 
