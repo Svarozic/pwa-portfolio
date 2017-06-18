@@ -52,10 +52,10 @@ export default class NavBar extends Component {
                 <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
                 <ul id="nav" className="nav">
-                    <li className="current"><a className="smoothscroll" href="#pp-home">Home</a></li>
-                    <li><a className="smoothscroll" href="#pp-about-container">About</a></li>
-                    <li><a className="smoothscroll" href="#pp-portfolio-container">Portfolio</a></li>
-                    <li><a className="smoothscroll" href="#pp-playground-container">Playground</a></li>
+                    <li className="current waves-effect waves-light"><a className="smoothscroll" href="#pp-home">Home</a></li>
+                    <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-about-container">About</a></li>
+                    <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-portfolio-container">Portfolio</a></li>
+                    <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-playground-container">Playground</a></li>
                 </ul>
 
             </nav>

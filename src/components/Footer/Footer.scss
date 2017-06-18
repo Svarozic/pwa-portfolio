@@ -1,0 +1,14 @@
+$scroll-btn-margin: 28px; // half from materialize large btn
+
+.pp-footer-component {
+  position: relative;
+  background: #0f0f0f;
+  padding: $scroll-btn-margin 0;
+
+  .pp-scrollbtn-container {
+    position: absolute;
+    top: -$scroll-btn-margin;
+    left: 50%;
+    margin-left: -$scroll-btn-margin;
+  }
+}

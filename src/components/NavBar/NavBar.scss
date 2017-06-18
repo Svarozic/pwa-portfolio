@@ -17,10 +17,11 @@
   position: fixed;
   left: 0;
   top: 0;
+  background-color: rgba(225, 225, 225, 0.4);
 }
 
 .opaque {
-  background-color: #333;
+  background-color: #333 !important;
 
   ul#nav li a {
     color: #ffffff;
@@ -59,7 +60,7 @@ ul#nav li a {
   line-height: 32px;
   text-decoration: none;
   text-align: left;
-  color: $color-orange;
+  color: $color-green;
   text-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 
   -webkit-transition: color .2s ease-in-out;
@@ -74,10 +75,10 @@ ul#nav li a:active {
 }
 
 ul#nav li.current a {
-  color: $color-orange;
+  color: $color-green;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: $width-device-tablet) {
 
   /* mobile navigation
   -------------------------------------------------------------------- */
@@ -94,7 +95,7 @@ ul#nav li.current a {
     width: 48px;
     height: 48px;
     text-align: left;
-    background-color: $color-orange;
+    background-color: $color-green;
     position: relative;
     border: none;
     float: right;
@@ -135,16 +136,15 @@ ul#nav li.current a {
     float: right;
 
     position: relative;
-    top: 12px;
+    top: 0;
     right: 0;
   }
 
   /* display menu panels */
   #nav-wrap:target > ul#nav {
     display: block;
-    padding: 30px 20px 48px 20px;
+    padding: 20px;
     background: #1f2024;
-    margin: 0 30px;
     clear: both;
   }
 
@@ -161,15 +161,14 @@ ul#nav li.current a {
   ul#nav li a {
     color: #ffffff;
     display: block;
-    margin: 0;
-    padding: 0;
-    margin: 12px 0;
+    padding: 12px 0;
     line-height: 16px; /* reset line-height from 48px */
     border: none;
+    text-align: center;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: $width-device-mobile) {
 
   #nav-wrap ul#nav {
     width: auto;

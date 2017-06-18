@@ -24,3 +24,9 @@ $size-photo: 200px;
   }
 
 }
+
+@media only screen and (max-width: $width-device-mobile) {
+  .pp-download-cv-btn {
+    display: block;
+  }
+}
