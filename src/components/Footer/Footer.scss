@@ -1,9 +1,50 @@
+@import '../../_variables';
+
 $scroll-btn-margin: 28px; // half from materialize large btn
+
+$color-footer-gray-light: #525252;
+$color-footer-gray-dark: #343434;
 
 .pp-footer-component {
   position: relative;
   background: #0f0f0f;
   padding: $scroll-btn-margin 0;
+
+  color: $color-footer-gray-dark;
+
+  a {
+    color: $color-footer-gray-light;
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  .pp-social-links-container {
+    padding: 14px 0;
+  }
+
+  .pp-copyright {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      line-height: 24px;
+
+      &:before {
+        content: "\2022";
+        padding-left: 10px;
+        padding-right: 10px;
+        color: $color-green;
+      }
+
+      &:first-child:before {
+        display: none;
+      }
+    }
+  }
 
   .pp-scrollbtn-container {
     position: absolute;
