@@ -8,16 +8,18 @@ import 'font-awesome/css/font-awesome.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
-import initCeeVee from './initCeeVee';
+import initExtJsPlugins from './initExtJsPlugins';
 import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection';
 import PortfolioSection from './components/PortfolioSection/PortfolioSection';
+import AboutSection from './components/AboutSection/AboutSection';
 import HomeAppendix from './components/HomeSection/HomeAppendix';
 
 
 ReactDOM.render(<HomeAppendix />, document.getElementById('pp-appendix-container'));
 
+ReactDOM.render(<AboutSection />, document.getElementById('pp-about-container'));
 ReactDOM.render(<PortfolioSection />, document.getElementById('pp-portfolio-container'));
 ReactDOM.render(<PlaygroundSection />, document.getElementById('pp-playground-container'));
 
-initCeeVee();
+initExtJsPlugins();
 registerServiceWorker();
