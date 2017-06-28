@@ -4,7 +4,7 @@
   "private"        : true,
   "dependencies"   : {
     "font-awesome"   : "^4.7.0",
-    "jquery"         : "1.10.2",
+    "jquery"         : "1.12.4",
     "materialize-css": "^0.98.2",
     "react"          : "^15.5.4",
     "react-dom"      : "^15.5.4"
