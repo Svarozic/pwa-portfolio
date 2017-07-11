@@ -16,6 +16,7 @@ import HomeAppendix from './components/HomeSection/HomeAppendix';
 import AboutSection from './components/AboutSection/AboutSection';
 import ResumeSection from './components/ResumeSection/ResumeSection';
 import PlaygroundSection from './components/PlaygroundSection/PlaygroundSection';
+import LanguagesSection from './components/LanguagesSection/LanguagesSection';
 import WorksSection from './components/WorksSection/WorksSection';
 import Footer from './components/Footer/Footer';
 
@@ -25,6 +26,7 @@ ReactDOM.render(<HomeAppendix />, document.getElementById('pp-appendix-container
 
 ReactDOM.render(<AboutSection />, document.getElementById('pp-about-container'));
 ReactDOM.render(<ResumeSection />, document.getElementById('pp-resume-container'));
+ReactDOM.render(<LanguagesSection />, document.getElementById('pp-languages-container'));
 ReactDOM.render(<WorksSection />, document.getElementById('pp-works-container'));
 ReactDOM.render(<PlaygroundSection />, document.getElementById('pp-playground-container'));
 
