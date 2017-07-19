@@ -1,0 +1,44 @@
+@import '../../_variables';
+
+$color-text: #ffffff;
+
+.pp-playground-component {
+  background: $color-gray-dark;
+
+  h3, input {
+    color: $color-text;
+  }
+
+  .pp-skill-item {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 4px;
+
+    &.shadowed {
+      opacity: 0.2;
+
+      .pp-title {
+        background-color: $color-gray-dark !important;
+      }
+    }
+
+    .pp-img-container {
+      padding: 4px;
+      img {
+        //width: 100%;
+        //max-width: 150px;
+        width: 50px;
+      }
+    }
+
+    .pp-title {
+      color: $color-text;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-weight: bold;
+      font-size: smaller;
+      padding: 0 2px;
+    }
+  }
+}

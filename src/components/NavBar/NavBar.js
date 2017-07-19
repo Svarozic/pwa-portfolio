@@ -49,7 +49,7 @@ export default class NavBar extends Component {
             <nav id="nav-wrap">
 
                 <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-                <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+                <a className="mobile-btn" href="#!" title="Hide navigation">Hide navigation</a>
 
                 <ul id="nav" className="nav">
                     <li className="current waves-effect waves-light"><a className="smoothscroll" href="#pp-home">Home</a></li>
