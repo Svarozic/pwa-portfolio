@@ -13,33 +13,31 @@ export default class LanguagesSection extends Component {
             <div className="pp-languages-component">
                 <div className="container">
                     <h3>Languages</h3>
-                    TODO paralax background Svidnik
-                    <div className="row">
 
-                        <div className="col s12 m3">
-                            <h4>Slovensky</h4>
+                    <div className="row">
+                        <div className="col s12 m3 center">
                             <img src={flagSK} alt="Slovakia flag"/>
+                            <h4>Slovensky</h4>
                             <p>Native</p>
                         </div>
 
-                        <div className="col s12 m3">
-                            <h4>English</h4>
+                        <div className="col s12 m3 center">
                             <img src={flagEN} alt="Great Britain flag"/>
+                            <h4>English</h4>
                             <p>Professional working proficiency</p>
                         </div>
 
-                        <div className="col s12 m3">
-                            <h4>Deutsch</h4>
+                        <div className="col s12 m3 center">
                             <img src={flagDE} alt="German flag"/>
+                            <h4>Deutsch</h4>
                             <p>Limited working proficiency</p>
                         </div>
 
-                        <div className="col s12 m3">
-                            <h4>Српски</h4>
+                        <div className="col s12 m3 center">
                             <img src={flagSR} alt="Serbia flag"/>
+                            <h4>Српски</h4>
                             <p>Beginner</p>
                         </div>
-
                     </div>
                 </div>
             </div>
