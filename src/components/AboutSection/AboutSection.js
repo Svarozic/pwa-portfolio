@@ -14,7 +14,7 @@ const AboutSection = () => {
                         <img src={photo} alt=""/>
                     </div>
 
-                    <div className="col s12 m8 left-align">
+                    <div className="col s12 m8">
                         <p className="pp-description">
                             Hello, my name is <b>Ing. Peter Petraník</b> and I am 26 years old developer with current location in Vienna.
                             I am communicative, flexible, creative and responsible person. I prefer working with people in a team. In my

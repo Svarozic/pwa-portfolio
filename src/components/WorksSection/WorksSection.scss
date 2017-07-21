@@ -2,4 +2,28 @@
 
 .pp-works-component {
 
+  .pp-description {
+    font-family: 'librebaskerville-italic', serif;
+    text-align: center;
+  }
+
+  .pp-project-screen {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .pp-project-title {
+    font: 16px/24px 'Roboto', serif;
+    border-bottom: 3px solid $color-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .pp-project-desc {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    text-align: justify;
+    font-size: small;
+  }
 }

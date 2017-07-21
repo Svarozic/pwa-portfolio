@@ -25,9 +25,8 @@ $color-text: #ffffff;
     .pp-img-container {
       padding: 4px;
       img {
-        //width: 100%;
-        //max-width: 150px;
-        width: 50px;
+        width: 100%;
+        max-width: 150px;
       }
     }
 
@@ -39,6 +38,7 @@ $color-text: #ffffff;
       font-weight: bold;
       font-size: smaller;
       padding: 0 2px;
+      background-color: $color-green;
     }
   }
 }

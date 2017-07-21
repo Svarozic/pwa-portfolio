@@ -41,7 +41,7 @@ export default class PlaygroundSection extends Component {
                 <div className="col s4 m2 xl1" key={skill.title}>
                     <div className={'pp-skill-item ' + thatComponent.isShadowed(skill)} title={skill.title}>
                         <div className="pp-img-container hide-on-small-only"><img src={skill.src} alt={skill.title}/></div>
-                        <div className="pp-title teal lighten-2">{skill.title}</div>
+                        <div className="pp-title">{skill.title}</div>
                     </div>
                 </div>
             );
