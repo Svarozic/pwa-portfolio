@@ -18,8 +18,8 @@ const AboutSection = () => {
 
                     <ul className="pp-copyright">
                         <li>&copy; Copyright 2017 Ing.&nbsp;Peter&nbsp;Petraník</li>
-                        <li>Check <a href="https://github.com/Svarozic/svarozic.github.io/commits/master"
-                                     rel="noopener noreferrer" target="_blank">Last Update</a> of this page
+                        <li>Check the <a href="https://github.com/Svarozic/svarozic.github.io/commits/master"
+                                         rel="noopener noreferrer" target="_blank">Last Update</a> of this page
                         </li>
                         <li>Inspired by <a title="Styleshout" href="http://www.styleshout.com/"
                                            rel="noopener noreferrer" target="_blank">Styleshout</a></li>
