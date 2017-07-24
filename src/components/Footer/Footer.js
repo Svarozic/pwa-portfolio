@@ -6,15 +6,18 @@ import ScrollButton from '../shared/ScrollButton';
 
 const AboutSection = () => {
     return (
-        <div className="pp-footer-component">
+        <section className="pp-footer-component">
             <div className="container">
                 <div className="row center-align">
-                    <div className="pp-social-links-container">
-                        <SocialLinks/>
-                    </div>
+                    <h3>Thank you for your attention</h3>
+
+                    <p className="pp-description">Feel free to contact me any time, I already look forward to see your message.</p>
+
+                    <SocialLinks/>
+
 
                     <ul className="pp-copyright">
-                        <li>&copy; Copyright 2015 Ing.&nbsp;Peter&nbsp;Petraník</li>
+                        <li>&copy; Copyright 2017 Ing.&nbsp;Peter&nbsp;Petraník</li>
                         <li>Check <a href="https://github.com/Svarozic/svarozic.github.io/commits/master"
                                      rel="noopener noreferrer" target="_blank">Last Update</a> of this page
                         </li>
@@ -27,7 +30,7 @@ const AboutSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

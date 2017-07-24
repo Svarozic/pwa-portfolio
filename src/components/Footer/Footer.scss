@@ -9,8 +9,16 @@ $color-footer-gray-dark: #676767;
   position: relative;
   background: #0f0f0f;
   padding: $scroll-btn-margin 0;
-
   color: $color-footer-gray-dark;
+
+  h3 {
+    color: $color-footer-gray-light;
+  }
+
+  .pp-description {
+    font-family: 'librebaskerville-italic', serif;
+    text-align: center;
+  }
 
   a {
     color: $color-footer-gray-light;
@@ -21,12 +29,13 @@ $color-footer-gray-dark: #676767;
   }
 
   .pp-social-links-container {
-    padding: 14px 0;
+    //padding: 14px 0;
   }
 
   .pp-copyright {
     margin: 0;
-    padding: 0;
+    padding: 40px 0 0;
+    font-size: small;
 
     li {
       display: inline;
