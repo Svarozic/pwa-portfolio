@@ -1,7 +1,7 @@
 {
-  "short_name"      : "Ing. Petraník Portfolio",
+  "short_name"      : "Ing. Petraník",
   "name"            : "Ing. Peter Petraník Portfolio",
-  "description"     : "Progressive Web Application portfolio of Ing. Peter Petraník",
+  "description"     : "PWA portfolio of software developer Ing. Peter Petraník",
   "icons"           : [
     {
       "src"  : "favicon.ico",
