@@ -35,6 +35,8 @@ export default class WorksSection extends Component {
                         </div>
                     </div>
 
+                    {/*TODO portfolio v1*/}
+
                     {/*SERVER DASHBOARD*/}
                     <div className="row">
                         <div className="col s12 m9 center">
@@ -100,6 +102,8 @@ export default class WorksSection extends Component {
                             </p>
                         </div>
                     </div>
+
+                    {/*TODO porfolio v2*/}
 
                 </div>
             </div>

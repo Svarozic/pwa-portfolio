@@ -55,7 +55,6 @@ export default class PlaygroundSection extends Component {
     }
 
     isShadowed(skill) {
-        //GRYF
         return skill.title.toUpperCase().indexOf(this.state.searchValue) === -1 ? 'shadowed' : '';
     }
 }
