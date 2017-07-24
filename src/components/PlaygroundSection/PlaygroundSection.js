@@ -17,10 +17,10 @@ export default class PlaygroundSection extends Component {
                     <div className="row">
                         <div className="input-field col s12">
                             <input id="playground-search-input" type="text"
-                                   placeholder="... type  'React' or 'Angular' etc."
+                                   placeholder="... type the skill that you are looking for  ( 'React' / 'Angular' / etc.)"
                                    onChange={this.handleChangeSearchString.bind(this)}
                                    value={this.state.searchValue}/>
-                            <label htmlFor="playground-search-input">Have I ever played with ...</label>
+                            <label htmlFor="playground-search-input">Has Peter ever worked with ...</label>
                         </div>
                     </div>
 

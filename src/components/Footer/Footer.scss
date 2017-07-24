@@ -2,8 +2,8 @@
 
 $scroll-btn-margin: 28px; // half from materialize large btn
 
-$color-footer-gray-light: #525252;
-$color-footer-gray-dark: #343434;
+$color-footer-gray-light: #898989;
+$color-footer-gray-dark: #676767;
 
 .pp-footer-component {
   position: relative;
@@ -14,6 +14,7 @@ $color-footer-gray-dark: #343434;
 
   a {
     color: $color-footer-gray-light;
+    font-weight: bold;
     &:hover {
       color: $color-green;
     }
