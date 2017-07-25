@@ -6,17 +6,36 @@ $size-scrolldown-btn: 64px;
   height: 170px; //same as loading placeholder gif
   padding-top: 5%;
 
+  a {
+    color: #ffffff;
+    &:hover {
+      color: $color-green;
+    }
+  }
+
   .pp-scrollbtn-container {
     position: absolute;
     bottom: 2%;
     left: 0;
     right: 0;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
   }
 
-  a {
-    color: #ffffff;
-    &:hover {
-      color: $color-green;
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-25px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-25px);
     }
   }
 }
