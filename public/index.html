@@ -60,7 +60,7 @@
         height: 100%;
     }
 
-    #pp-home #pp-navbar-container {
+    #pp-navbar-container {
         position: fixed;
         left: 0;
         right: 0;
@@ -68,26 +68,24 @@
         z-index: 100;
     }
 
-    #pp-home .pp-home-banner {
+    #pp-home-banner {
         display: inline-block;
         vertical-align: middle;
         margin: 0 auto;
         width: 90%;
         text-align: center;
-
-        font-size: 0;
         line-height: normal;
     }
 
-    #pp-home .pp-home-banner h1 {
+    #pp-home-banner .pp-hello {
         font: 90px/1.1em sans-serif;
         font-weight: bold;
         color: #ffffff;
-        margin: 18px 0;
+        margin: 23px 0; /*override materialize*/
         text-shadow: 0 2px 6px #000000;
     }
 
-    #pp-home .pp-home-banner h3 {
+    #pp-home-banner .pp-hello-msg {
         font: 18px/1.5em serif;
         color: #A8A8A8;
         margin: 0 auto;
@@ -95,19 +93,20 @@
         text-shadow: 0 2px 6px #000000;
     }
 
-    #pp-home .pp-home-banner h3 a,
-    #pp-home .pp-home-banner h3 b {
+    #pp-home-banner .pp-hello-msg a,
+    #pp-home-banner .pp-hello-msg b {
         color: #ffffff;
     }
 </style>
 <header id="pp-home">
     <nav id="pp-navbar-container"><!--REACT_COMPONENT_CONTAINER--></nav>
 
-    <div class="pp-home-banner">
-        <h1 class="fittext-responsive-headline">Ahoj Hallo Здраво&nbsp;!</h1>
-        <h3>My name is <b>Ing. Peter Petraník</b>, welcome to my portfolio page.</h3>
-        <h3>I'm <b>Software Engineer</b> with primary focus for Web Applications. Let's
-            <a class="smoothscroll" href="#pp-about-container">start&nbsp;scrolling</a> and learn more about me.</h3>
+    <div id="pp-home-banner">
+        <h1 class="pp-hello jquery-fittext">Ahoj Hallo Здраво&nbsp;!</h1>
+        <div class="pp-hello-msg">My name is <b>Ing. Peter Petraník</b>, welcome to my portfolio page.</div>
+        <div class="pp-hello-msg">I'm <b>Software Engineer</b> with primary focus for Web Applications. Let's
+            <a class="smoothscroll" href="#pp-about-container">start&nbsp;scrolling</a> and learn more about me.
+        </div>
 
         <div id="pp-appendix-container"><!--REACT_COMPONENT_CONTAINER-->
             <!--Pre-bootstrap loading removed when ReactJS render component-->
@@ -238,15 +237,10 @@
 <section id="pp-languages-container"><!--REACT_COMPONENT_CONTAINER--></section>
 <section id="pp-works-container"><!--REACT_COMPONENT_CONTAINER--></section>
 <section id="pp-playground-container"><!--REACT_COMPONENT_CONTAINER--></section>
-
-
 <footer id="pp-footer-container"><!--REACT_COMPONENT_CONTAINER--></footer>
 
-<!--<script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/jquery-migrate-1.2.1.min.js"></script>-->
-<script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/jquery.flexslider.js"></script>
 <script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/waypoints.js"></script>
 <script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/jquery.fittext.js"></script>
-<!--<script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/magnific-popup.js"></script>-->
 <script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/materialize.js"></script>
 
 </body>
