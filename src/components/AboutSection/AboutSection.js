@@ -1,6 +1,7 @@
 import './AboutSection.css';
 
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import photo from './photo.jpg';
 
 const AboutSection = () => {
@@ -11,7 +12,9 @@ const AboutSection = () => {
                 <div className="row">
 
                     <div className="col s12 m4 center-align">
-                        <img src={photo} alt=""/>
+                        <LazyLoad once={true} height={200} offset={500}>
+                            <img src={photo} alt="Ing. Peter Petraník"/>
+                        </LazyLoad>
                     </div>
 
                     <div className="col s12 m8">

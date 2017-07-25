@@ -1,6 +1,8 @@
 import './WorksSection.css';
 
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
+
 import pngScreenComoto from './screens/screen-comoto.png';
 import pngScreenNemox from './screens/screen-nemox.png';
 import pngScreenPriznaj from './screens/screen-priznaj.png';
@@ -20,7 +22,9 @@ export default class WorksSection extends Component {
                     {/*PRIZNAJ*/}
                     <div className="row">
                         <div className="col s12 m9 center">
-                            <img className="pp-project-screen" src={pngScreenPriznaj} alt="screen priznaj"/>
+                            <LazyLoad once={true} height={500} offset={500}>
+                                <img className="pp-project-screen" src={pngScreenPriznaj} alt="screen priznaj"/>
+                            </LazyLoad>
                         </div>
 
                         <div className="col s12 m3">
@@ -39,7 +43,9 @@ export default class WorksSection extends Component {
                     {/*SERVER DASHBOARD*/}
                     <div className="row">
                         <div className="col s12 m9 center">
-                            <img className="pp-project-screen" src={pngScreenServerDashboard} alt="screen server dashboard"/>
+                            <LazyLoad once={true} height={500} offset={500}>
+                                <img className="pp-project-screen" src={pngScreenServerDashboard} alt="screen server dashboard"/>
+                            </LazyLoad>
                         </div>
 
                         <div className="col s12 m3">
@@ -58,7 +64,9 @@ export default class WorksSection extends Component {
                     {/*COMOTO*/}
                     <div className="row">
                         <div className="col s12 m9 center">
-                            <img className="pp-project-screen" src={pngScreenComoto} alt="screen comoto"/>
+                            <LazyLoad once={true} height={500} offset={500}>
+                                <img className="pp-project-screen" src={pngScreenComoto} alt="screen comoto"/>
+                            </LazyLoad>
                         </div>
 
                         <div className="col s12 m3">
@@ -82,7 +90,9 @@ export default class WorksSection extends Component {
                     {/*NEMOX*/}
                     <div className="row">
                         <div className="col s12 m9 center">
-                            <img className="pp-project-screen" src={pngScreenNemox} alt="screen comoto"/>
+                            <LazyLoad once={true} height={500} offset={500}>
+                                <img className="pp-project-screen" src={pngScreenNemox} alt="screen comoto"/>
+                            </LazyLoad>
                         </div>
 
                         <div className="col s12 m3">
@@ -105,7 +115,9 @@ export default class WorksSection extends Component {
                     {/*PWA PORTFOLIO*/}
                     <div className="row">
                         <div className="col s12 m9 center">
-                            <img className="pp-project-screen" src={pngPwaPortfolio} alt="screen web portfolio"/>
+                            <LazyLoad once={true} height={500} offset={500}>
+                                <img className="pp-project-screen" src={pngPwaPortfolio} alt="screen web portfolio"/>
+                            </LazyLoad>
                         </div>
 
                         <div className="col s12 m3">
