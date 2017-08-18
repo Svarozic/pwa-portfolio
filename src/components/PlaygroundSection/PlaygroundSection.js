@@ -1,12 +1,18 @@
 import './PlaygroundSection.css';
 
+
 import React, { Component } from 'react';
 import skillsRegister from './skills';
+import debounce from 'throttle-debounce/debounce';
+import UtilMixpanel from '../../util-mixpanel';
 
 export default class PlaygroundSection extends Component {
     constructor(props) {
         super(props);
         this.state = {searchValue: ''};
+
+        this.debouncedCallMixpanel = debounce(300, UtilMixpanel.trackPlaygroundSearch);
+        this.handleChangeSearchString = this.handleChangeSearchString.bind(this);
     }
 
     render() {
@@ -18,7 +24,7 @@ export default class PlaygroundSection extends Component {
                         <div className="input-field col s12">
                             <input id="playground-search-input" type="text"
                                    placeholder="... type the skill that you are looking for  ( 'React' / 'Angular' / etc.)"
-                                   onChange={this.handleChangeSearchString.bind(this)}
+                                   onChange={this.handleChangeSearchString}
                                    value={this.state.searchValue}/>
                             <label htmlFor="playground-search-input">Has Peter ever worked with ...</label>
                         </div>
@@ -51,7 +57,10 @@ export default class PlaygroundSection extends Component {
     }
 
     handleChangeSearchString(e) {
-        this.setState({searchValue: e.target.value.toUpperCase()});
+        const searchValue = e.target.value.toUpperCase();
+        this.setState({searchValue: searchValue});
+        if (searchValue)
+            this.debouncedCallMixpanel(searchValue);
     }
 
     isShadowed(skill) {
