@@ -7,12 +7,12 @@ const mixpanel = window.mixpanel;
 
 export default class UtilMixpanel {
     static trackDownloadCV() {
-        if (isProduction)
+        if (isProduction && mixpanel)
             mixpanel.track('DownloadCV');
     }
 
     static trackPlaygroundSearch(searchString) {
-        if (isProduction)
+        if (isProduction && mixpanel)
             mixpanel.track('PlaygroundSearch', {'searchString': searchString});
     }
 }
