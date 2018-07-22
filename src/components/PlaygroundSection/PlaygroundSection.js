@@ -20,6 +20,10 @@ export default class PlaygroundSection extends Component {
             <div className="pp-playground-component">
                 <div className="container">
                     <h3>Playground</h3>
+                    <p className="pp-description">
+                        ... with technologies that I have touched
+                    </p>
+
                     <div className="row">
                         <div className="input-field col s12">
                             <input id="playground-search-input" type="text"

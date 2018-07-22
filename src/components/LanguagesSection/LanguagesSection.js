@@ -13,6 +13,9 @@ export default class LanguagesSection extends Component {
             <div className="pp-languages-component">
                 <div className="container">
                     <h3>Languages</h3>
+                    <p className="pp-description">
+                        ... I can speak
+                    </p>
 
                     <div className="row">
                         <div className="col s12 m3 center">

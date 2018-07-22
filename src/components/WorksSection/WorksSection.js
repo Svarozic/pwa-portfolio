@@ -16,7 +16,7 @@ export default class WorksSection extends Component {
                 <div className="container">
                     <h3>Works</h3>
                     <p className="pp-description">
-                        Some of projects that I have created
+                        ... that I have created
                     </p>
 
                     {/*PRIZNAJ*/}

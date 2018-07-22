@@ -23,10 +23,13 @@ $size-photo: 200px;
     margin: 0 0 20px 0;
   }
 
-}
-
-@media only screen and (max-width: $width-device-mobile) {
   .pp-download-cv-btn {
-    display: block;
+    margin: 50px auto;
+
+    @media only screen and (max-width: $width-device-mobile) {
+      display: block;
+      margin: 20px auto;
+    }
   }
+
 }

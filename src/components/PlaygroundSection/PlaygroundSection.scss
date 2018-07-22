@@ -6,6 +6,12 @@ $color-text: #ffffff;
   background: $color-gray-dark;
   padding-bottom: 40px;
 
+  .pp-description {
+    font-family: 'librebaskerville-italic', serif;
+    text-align: center;
+    color: $color-text;
+  }
+
   h3, input {
     color: $color-text;
   }
