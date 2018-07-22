@@ -29,7 +29,8 @@ export default class AboutSection extends Component {
                         <div className="col s12 m8">
                             <p className="pp-description">
                                 Hello, my name is
-                                <b>Ing. Peter Petraník</b> and I am 26 years old developer with current location in Vienna.
+                                <b>Ing. Peter Petraník</b> and I am 27 years old developer with current location in
+                                Vienna.
                                 I am communicative, flexible, creative and responsible person. I prefer working with people in a team. In my
                                 free time I like team sports, running, fitness and in general healthy lifestyle because I feel the need to not
                                 let the “dark IT” site win over me.

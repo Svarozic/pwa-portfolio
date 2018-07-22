@@ -123,15 +123,20 @@ export default class WorksSection extends Component {
                         <div className="col s12 m3">
                             <h5 className="pp-project-title">PWA portfolio</h5>
                             <p className="pp-project-desc">
-                                My it-portfolio created as Progresive Web Application (PWA) that you are using right now. For a long time I
-                                had online the older version (on screenshot) written in AngularJS, but after two years I decided to update
+                                My it-portfolio created as Progressive Web Application (PWA) that you are using right
+                                now. For a long time I
+                                had online the older version (on screenshot) written in AngularJS, but after few years I
+                                decided to update
                                 it and bring it back alive. Because AngularJS as framework was obsolete and it would be hard to migrate all
                                 JavaScript code to new Angular v2/3/4/.. (especially custom directives with ugly jquery code), I decided to
-                                create it from scratch according to some HTML template but with React JS. I was also inspired by Google I/O 2017,
-                                where one of the main topics were Progresive Web Applications, so I have used create-react-app tool to jump into
+                                create it from scratch according to some HTML template but with ReactJS. I was also
+                                inspired by Google I/O 2017,
+                                where one of the main topics were Progressive Web Applications, so I have used
+                                create-react-app tool to jump into
                                 that and started to read more about service-workers and how to use them. This app is still in progress, I am not
-                                happy at all with all of my code there, deployment procedure and especially with loading speed of PWA, so take
-                                it more as my playground in next few days ;)
+                                happy with all of my code there, deployment procedure and especially with loading speed
+                                of PWA, so take
+                                it more as my playground ;)
                             </p>
                         </div>
                     </div>

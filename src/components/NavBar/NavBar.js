@@ -54,9 +54,10 @@ export default class NavBar extends Component {
                 <ul id="nav" className="nav">
                     <li className="current waves-effect waves-light"><a className="smoothscroll" href="#pp-home">Home</a></li>
                     <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-about-container">About</a></li>
-                    <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-resume-container">Resume</a></li>
                     <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-works-container">Works</a></li>
                     <li className="waves-effect waves-light"><a className="smoothscroll" href="#pp-playground-container">Playground</a></li>
+                    <li className="waves-effect waves-light"><a className="smoothscroll"
+                                                                href="#pp-resume-container">Resume</a></li>
                 </ul>
 
             </nav>
