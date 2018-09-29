@@ -7,7 +7,7 @@ $color-text: #ffffff;
   padding-bottom: 40px;
 
   .pp-description {
-    font-family: 'librebaskerville-italic', serif;
+    font-style: italic;
     text-align: center;
     color: $color-text;
   }
@@ -16,18 +16,22 @@ $color-text: #ffffff;
     color: $color-text;
   }
 
+  .col--hidden {
+    display: none;
+  }
+
   .pp-skill-item {
     background-color: #ffffff;
     text-align: center;
     margin: 4px;
 
-    &.shadowed {
-      opacity: 0.2;
-
-      .pp-title {
-        background-color: $color-gray-dark !important;
-      }
-    }
+    //&.shadowed {
+    //  opacity: 0.2;
+    //
+    //  .pp-title {
+    //    background-color: $color-gray-dark !important;
+    //  }
+    //}
 
     .pp-img-container {
       padding: 4px;

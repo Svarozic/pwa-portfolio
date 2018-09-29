@@ -60,8 +60,8 @@ export default class PlaygroundSection extends React.Component {
 
 		skillsRegister.forEach(function (skill) {
 			skillsJSX.push(
-				<div className="col s4 m2 xl1" key={skill.title}>
-					<div className={'pp-skill-item ' + thatComponent._isShadowed(skill)} title={skill.title}>
+				<div className={'col s4 m2 xl1 ' + thatComponent._isHidden(skill)} key={skill.title}>
+					<div className="pp-skill-item" title={skill.title}>
 						<div className="pp-img-container hide-on-small-only"><img src={skill.src} alt={skill.title}/>
 						</div>
 						<div className="pp-title">{skill.title}</div>
@@ -73,7 +73,7 @@ export default class PlaygroundSection extends React.Component {
 		return skillsJSX;
 	}
 
-	_isShadowed(skill) {
-		return skill.title.toUpperCase().indexOf(this.state.searchValue) === -1 ? 'shadowed' : '';
+	_isHidden(skill) {
+		return skill.title.toUpperCase().indexOf(this.state.searchValue) === -1 ? 'col--hidden' : '';
 	}
 }

@@ -1,34 +1,31 @@
 {
-  "name"           : "pwa-portfolio",
-  "version"        : "0.1.0",
-  "private"        : true,
-  "dependencies"   : {
-    "font-awesome"     : "^4.7.0",
-    "jquery"           : "1.12.4",
-    "materialize-css"  : "^0.98.2",
-    "react"            : "^15.5.4",
-    "react-dom"        : "^15.5.4",
-    "react-lazyload"   : "^2.2.7",
+  "name": "pwa-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "1.12.4",
+    "materialize-css": "^0.98.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-lazyload": "^2.2.7",
     "throttle-debounce": "^1.0.1"
   },
   "devDependencies": {
-    "copyfiles"         : "^1.2.0",
-    "http-server"       : "^0.10.0",
+    "copyfiles": "^1.2.0",
+    "http-server": "^0.10.0",
     "node-sass-chokidar": "^0.0.3",
-    "npm-run-all"       : "^4.0.2",
-    "react-scripts"     : "1.0.7",
-    "sw-precache"       : "^5.2.0"
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "1.0.7"
   },
-  "scripts"        : {
-    "copy-ext-js" : "copyfiles -f node_modules/materialize-css/bin/materialize.js node_modules/jquery/dist/jquery.min.js public/ext-js-plugins",
-    "build-css"   : "node-sass-chokidar src/ -o src/",
-    "watch-css"   : "yarn run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start-js"    : "react-scripts start",
-    "start"       : "yarn run copy-ext-js && npm-run-all -p watch-css start-js",
-    "build"       : "yarn run copy-ext-js && yarn run build-css && react-scripts build",
-    "test"        : "react-scripts test --env=jsdom",
-    "eject"       : "react-scripts eject",
-    "start:build" : "http-server build",
-    "build:deploy": "yarn run build && mv build/service-worker.js build/service-worker_ORIGINAL.js && sw-precache --config=sw-precache-my-config.js --verbose"
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "yarn run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "start:build": "http-server build",
+    "build": "yarn run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

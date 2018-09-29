@@ -3,18 +3,9 @@ import './AboutSection.css';
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import photo from './photo.jpg';
+import CurriculumButton from "../shared/CurriculumButton";
 
 export default class AboutSection extends React.Component {
-
-	handleClickDownloadCV() {
-		if (window.gtag) {
-			window.gtag('event', 'click', {
-				'event_category': 'about_section',
-				'event_label': 'download_cv_link',
-				'value': ''
-			});
-		}
-	}
 
 	render() {
 		return (
@@ -49,13 +40,7 @@ export default class AboutSection extends React.Component {
 								lectures and get to know new ideas, technologies or another development improvements.
 							</p>
 
-							<a className="pp-download-cv-btn btn-large waves-effect waves-light"
-								 href="https://drive.google.com/open?id=1g8SQONeebuWAYGrd-4I9RteNcVSjXZS_9lVYVlo-kNM"
-								 rel="noopener noreferrer" target="_blank"
-								 onClick={this.handleClickDownloadCV.bind(this)}>
-								<i className="fa fa-cloud-download left hide-on-small-only"/><b>Download my Curriculum
-								vitae</b>
-							</a>
+							<CurriculumButton />
 						</div>
 
 					</div>

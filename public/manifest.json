@@ -1,16 +1,21 @@
 {
-  "short_name"      : "Ing. Petraník",
-  "name"            : "Ing. Peter Petraník Portfolio",
-  "description"     : "PWA portfolio of software developer Ing. Peter Petraník",
-  "icons"           : [
+  "short_name": "svarozic.github.io",
+  "name": "PWA portfolio of software developer Ing. Peter Petraník",
+  "description": "PWA portfolio of software developer Ing. Peter Petraník",
+  "icons": [
     {
-      "src"  : "favicon.ico",
+      "src": "avatar_veles-circle.png",
       "sizes": "192x192",
-      "type" : "image/png"
+      "type": "image/png"
+    },
+    {
+      "src": "avatar_veles-circle.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url"       : "./index.html",
-  "display"         : "standalone",
-  "theme_color"     : "#000000",
-  "background_color": "#000000"
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }

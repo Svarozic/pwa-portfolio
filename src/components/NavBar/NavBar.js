@@ -1,7 +1,6 @@
+import $ from 'jquery';
+import React, {Component} from 'react';
 import './NavBar.css';
-import React, { Component } from 'react';
-
-const $ = window.jQuery || window.$;
 
 export default class NavBar extends Component {
     componentDidMount() {

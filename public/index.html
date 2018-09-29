@@ -3,36 +3,36 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Ing. Peter Petraník | PWA portfolio</title>
+    <title>Ing. Peter Petraník | Portfolio</title>
     <meta name="description" content="PWA portfolio of software developer Ing. Peter Petraník">
     <meta name="author" content="Ing. Peter Petraník">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="keywords" content="Petranik,Portfolio,PWA">
+    <meta name="keywords" content="Peter,Petranik,Petraník,svarozic,Portfolio,PWA">
 
     <!--TODO improve google crawl rate-->
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122803889-1"></script>
-  <script>
-		window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122803889-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-		gtag('js', new Date());
+        gtag('js', new Date());
 
-		gtag('config', 'UA-122803889-1');
-  </script>
+        gtag('config', 'UA-122803889-1');
+    </script>
 
 
-  <!--
-    manifest.json provides metadata used when your web app is added to the
-    homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-  -->
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <!--
@@ -44,9 +44,6 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-
-    <!--because of pre-bootstrap template script after the header-->
-    <script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/jquery.min.js"></script>
 
 </head>
 <body style="margin: 0;">
@@ -242,11 +239,11 @@
 </header>
 <script>
     // Make sure that #pp-home background-image height is equal to the browser height
-    $('#pp-home').css({'height': $(window).height()});
-    $(window).on('resize', function () {
-        $('#pp-home').css({'height': $(window).height()});
-        $('body').css({'width': $(window).width()})
-    });
+    var elHomeSection = document.getElementById('pp-home');
+    elHomeSection.style.height = window.innerHeight + 'px';
+    window.addEventListener('resize', function () {
+        elHomeSection.style.height = window.innerHeight + 'px';
+    }, true);
 </script>
 
 
@@ -256,9 +253,6 @@
 <section id="pp-resume-container"><!--REACT_COMPONENT_CONTAINER--></section>
 <section id="pp-languages-container"><!--REACT_COMPONENT_CONTAINER--></section>
 <footer id="pp-footer-container"><!--REACT_COMPONENT_CONTAINER--></footer>
-
-<script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/waypoints.js"></script>
-<script type="text/javascript" src="%PUBLIC_URL%/ext-js-plugins/materialize.js"></script>
 
 </body>
 </html>

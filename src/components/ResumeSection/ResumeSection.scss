@@ -3,7 +3,6 @@
 .pp-resume-component {
   padding-bottom: 40px;
 
-
   h3 {
     color: $color-gray-dark;
   }
@@ -45,11 +44,15 @@
     }
 
     p.pp-info {
-      font: 16px/24px 'librebaskerville-italic', serif;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 24px;
       margin-bottom: 12px;
 
       .pp-date {
-        font: 12px/24px 'librebaskerville-italic', serif;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 24px;
       }
     }
 

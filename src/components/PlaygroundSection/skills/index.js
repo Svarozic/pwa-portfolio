@@ -46,6 +46,7 @@ import pngKeycloak from './keycloak.png';
 import pngKotlin from './kotlin.png';
 import pngLess from './less.png';
 import pngLinux from './linux.png';
+import pngMacOS from './macos.png';
 import pngMaterializeCss from './materializecss.png';
 import pngMaven from './maven.png';
 import pngMongoDB from './mongodb.png';
@@ -132,6 +133,7 @@ export default [
     {title: 'Kotlin', src: pngKotlin},
     {title: 'Less Css', src: pngLess},
     {title: 'Linux', src: pngLinux},
+    {title: 'macOS', src: pngMacOS},
     {title: 'MaterializeCSS', src: pngMaterializeCss},
     {title: 'Maven', src: pngMaven},
     {title: 'MongoDB', src: pngMongoDB},
@@ -141,7 +143,7 @@ export default [
     {title: 'OSGi', src: pngOsgi},
     {title: 'Play Framework', src: pngPlay2},
     {title: 'PostgreSQL', src: pngPostgre},
-    {title: 'ReactJS', src: pngReact},
+    {title: 'React', src: pngReact},
     {title: 'Redux', src: pngRedux},
     {title: 'RequireJS', src: pngRequireJS},
     {title: 'RX', src: pngRx},

@@ -1,6 +1,7 @@
 import './ResumeSection.css';
 
 import React from 'react';
+import CurriculumButton from "../shared/CurriculumButton";
 
 
 export default class ResumeSection extends React.Component {
@@ -163,13 +164,13 @@ export default class ResumeSection extends React.Component {
 							<div className="pp-resume-item">
 								<h4>
 									<a href="https://www.celum.com/" rel="noopener noreferrer" target="_blank"
-										 onClick={this.handleClickCompanyLink.bind(this, 'CELUM GmbH')}>
-										CELUM GmbH&nbsp;<i className="fa fa-link"/>
+										 onClick={this.handleClickCompanyLink.bind(this, 'CELUM')}>
+										CELUM&nbsp;<i className="fa fa-link"/>
 									</a>
 								</h4>
 								<p className="pp-info">Fullstack Developer
 									<span
-										className="pp-date">&nbsp;&bull;&nbsp;January 2018 — <b>Present</b> | Vienna, Austria</span>
+										className="pp-date">&nbsp;&bull;&nbsp;January 2018 — September 2018 | Vienna, Austria</span>
 								</p>
 								<p className="pp-desc">
 									Currently I am working in CELUM as Fullstack developer and I am participating on many
@@ -189,8 +190,27 @@ export default class ResumeSection extends React.Component {
 								</p>
 							</div>
 
+                            <div className="pp-resume-item">
+                                <h4>
+                                    <a href="https://bitmovin.com/" rel="noopener noreferrer" target="_blank"
+                                    onClick={this.handleClickCompanyLink.bind(this, 'Bitmovin')}>
+                                        Bitmovin&nbsp;<i className="fa fa-link"/>
+                                    </a>
+                                </h4>
+                                <p className="pp-info">Fullstack Developer
+                                    <span className="pp-date">&nbsp;&bull;&nbsp;October 2018 — <b>Present</b> | Vienna, Austria</span>
+                                </p>
+                                <p className="pp-desc"></p>
+                            </div>
+
 						</div>
 					</div>
+
+                    <br/>
+                    <br/>
+                    <div className="center-align">
+                        <CurriculumButton/>
+                    </div>
 				</div>
 			</div>
 		);
