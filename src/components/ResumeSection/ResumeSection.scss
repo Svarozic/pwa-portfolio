@@ -34,6 +34,7 @@
 
         &:hover {
           color: $color-green;
+          border-bottom: solid 2px $color-green;
         }
       }
     }
@@ -61,6 +62,16 @@
       font-weight: 300;
       text-align: justify;
       font-size: small;
+
+      a {
+        color: $color-green;
+        font-weight: 400;
+
+        &:hover {
+          border-bottom: solid 2px $color-green;
+        }
+      }
+
     }
   }
 

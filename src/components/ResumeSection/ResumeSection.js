@@ -3,7 +3,6 @@ import './ResumeSection.css';
 import React from 'react';
 import CurriculumButton from "../shared/CurriculumButton";
 
-
 export default class ResumeSection extends React.Component {
 
 	handleClickCompanyLink(companyName) {
@@ -135,7 +134,7 @@ export default class ResumeSection extends React.Component {
 									this application was written in Java and main task was to re-implement it. On the
 									server-side was used NodeJS and on the client-side BackboneJS. Few technologies that
 									were also used in projects: Java, Maven, NodeJS, BackboneJS, AngularJS, Grunt, ActiveMQ,
-									SQL Server, Solr and others.
+									SQL Server, Solr and more.
 								</p>
 							</div>
 
@@ -149,7 +148,9 @@ export default class ResumeSection extends React.Component {
 								<p className="pp-info">Java Developer
 									<span className="pp-date">&nbsp;&bull;&nbsp;August 2015 — December 2017 | Vienna, Austria</span>
 								</p>
-								<p className="pp-desc">I have worked as software developer on Enterprise Imaging project. My
+								<p className="pp-desc">I have worked as software developer on <a
+									href="https://global.agfahealthcare.com/main/enterprise-imaging/" target="_blank" rel="noopener noreferrer">Enterprise
+									Imaging</a> project. My
 									team consisted of five people and our responsibility was to develop web application
 									(codename ‘XTEND’) that extends Enterprise Imaging desktop client and to provide all his
 									features into web browser. The work expected strong cooperation between our and the
@@ -157,7 +158,7 @@ export default class ResumeSection extends React.Component {
 									infrastructure of desktop application (with same additional implementation layers).
 									XTEND as a web application represented just a thin client that ‘replaced’ the Swing
 									frontend of Enterprise Imaging. Few technologies used in the project: Java, OSGi,
-									JavaScript, GWT, Angular, React, Maven, Docker etc.
+									JavaScript, GWT, Angular, React, Maven, Docker and more.
 								</p>
 							</div>
 
@@ -173,35 +174,51 @@ export default class ResumeSection extends React.Component {
 										className="pp-date">&nbsp;&bull;&nbsp;January 2018 — September 2018 | Vienna, Austria</span>
 								</p>
 								<p className="pp-desc">
-									Currently I am working in CELUM as Fullstack developer and I am participating on many
-									projects for our products. Main development center of CELUM is located in Linz, but I am
-									part of small team in Vienna (3 people). The main product is Workrooms.net and it
-									consists of many Java Backend projects (microservices) and Angular/Javascript Frontend
-									projects. The second product that I am part of is Tubemail, it represent standalone
-									extension of Workrooms that let users send and share files easier. Tubemail is
-									represented by Azure Serverless Backend and Angular Frontend (webapp and libraries for
-									integration with Workrooms). As developer, I am also trying to help company to improve
-									and simplify build, deployment and release process, increase our productivity in
-									development environment by integration of new tools or technologies. I am also
-									organizing weekly meetings for developers to discuss together our daily problems or to
-									present new solutions that could improve our code and product quality. Technologies used
-									in projects: Java, VertX, Typescript, JavaScript, Angular, NodeJs, Maven, Docker, Azure
-									etc.
+									I have worked in CELUM as Fullstack developer and I have participated on many projects for our
+									products. Main development center of CELUM was located in Linz, but I was part of small team in Vienna
+									(6 people). The main product was <a href="https://workrooms.net/en/"
+																											target="_blank" rel="noopener noreferrer">Workrooms.net</a> and it has consisted of many
+									Java Backend projects
+									(microservices) and Angular/Javascript Frontend projects. The second product that I was part of was
+									Tubemail, it represented standalone extension of Workrooms that let users send and share files easier.
+									Tubemail was represented by Azure Serverless Backend and Angular Frontend (webapp and libraries for
+									integration with Workrooms).
+									As developer, I was also trying to help company to improve and simplify build, deployment and release
+									processes, increase productivity in development environment by integration of new tools or
+									technologies. I was also organizing weekly meetings for developers to discuss together our daily
+									problems or to present new solutions that could improve our code and product quality.
+									Few technologies used in projects: Java, VertX, Typescript, JavaScript, Angular, NodeJs, Maven,
+									Docker, Azure and more.
 								</p>
 							</div>
 
-                            <div className="pp-resume-item">
-                                <h4>
-                                    <a href="https://bitmovin.com/" rel="noopener noreferrer" target="_blank"
-                                    onClick={this.handleClickCompanyLink.bind(this, 'Bitmovin')}>
-                                        Bitmovin&nbsp;<i className="fa fa-link"/>
-                                    </a>
-                                </h4>
-                                <p className="pp-info">Fullstack Developer
-                                    <span className="pp-date">&nbsp;&bull;&nbsp;October 2018 — <b>Present</b> | Vienna, Austria</span>
-                                </p>
-                                <p className="pp-desc"></p>
-                            </div>
+							<div className="pp-resume-item">
+								<h4>
+									<a href="https://bitmovin.com/" rel="noopener noreferrer" target="_blank"
+										 onClick={this.handleClickCompanyLink.bind(this, 'Bitmovin')}>
+										Bitmovin&nbsp;<i className="fa fa-link"/>
+									</a>
+								</h4>
+								<p className="pp-info">Fullstack Developer
+									<span className="pp-date">&nbsp;&bull;&nbsp;October 2018 — <b>Present</b> | Vienna, Austria</span>
+								</p>
+								<p className="pp-desc">
+									I am currently working for Bitmovin as Fullstack engineer. I work with our web projects written with
+									JavaScript / TypeScript / React / NextJs / Gatsy
+									like <a href="https://bitmovin.com/"
+													target="_blank" rel="noopener noreferrer">Website</a>, <a
+									href="https://bitmovin.com/docs" target="_blank" rel="noopener noreferrer">Bitmovin
+									Docs</a>, <a href="https://bitmovin.com/dashboard/login" target="_blank" rel="noopener noreferrer">Bitmovin Dashboard</a>, <a
+									href="https://bitmovin.com/demos/" target="_blank" rel="noopener noreferrer">Bitmovin
+									Demos</a>, <a href="https://sales-demos.bitmovin.com/login" target="_blank" rel="noopener noreferrer">Bitmovin Sales Demos</a>,
+									internal Admin Dashboard and internal WebUI components library. But I
+									also work on some backend projects written with Java/Kotlin/Springboot as our backend consists of many
+									microservices and as a fullstack engineer, it is part of my responsibilities to cover feature
+									development from backend to frontend.
+									Few technologies used in projects: JavaScript, Typescript, React, Redux, MobX, NextJs, Gatsy, Java,
+									Kotlin, Springboot and more.
+								</p>
+							</div>
 
 						</div>
 					</div>
